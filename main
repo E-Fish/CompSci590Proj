@@ -8,7 +8,6 @@
     </head> 
     <body>
         <header>
-            Rate PEA
                 <ul>
                     <li> <a href = "Science"> Science</a> </li>
                     <li> <a href = "Math"> Math</a> </li>
@@ -17,5 +16,9 @@
                     <li> <a href = "Computer Science"> Computer Science</a></li>
                 </ul>
         </header>
+        <h1>
+            RATE PEA
+        </h1>
     </body>
 </html>
+
