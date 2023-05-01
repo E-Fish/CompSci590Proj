@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: darkred;
+}
+
+header{
+    background-color: darkred;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+
+ul{
+    font-size: 40px;
+    color: white;
+    text-align: left;
+}
+
+li {
+    display: inline;
+}
