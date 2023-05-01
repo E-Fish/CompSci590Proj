@@ -1,1 +1,21 @@
-hello
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Rate PEA 
+        </title>
+        <link rel="stylesheet" href="style.css" >
+    </head> 
+    <body>
+        <header>
+            Rate PEA
+                <ul>
+                    <li> <a href = "Science"> Science</a> </li>
+                    <li> <a href = "Math"> Math</a> </li>
+                    <li> <a href = "Language"> Language</a> </li>
+                    <li> <a href = "English"> English</a> </li>
+                    <li> <a href = "Computer Science"> Computer Science</a></li>
+                </ul>
+        </header>
+    </body>
+</html>
