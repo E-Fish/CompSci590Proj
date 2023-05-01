@@ -5,19 +5,30 @@
     background-color: darkred;
 }
 
-header{
-    background-color: darkred;
-    font-size: 70px;
-    color: white;
-    text-align: center;
-}
-
 ul{
-    font-size: 40px;
-    color: white;
+    list-style-type: none;
+    background-color: darkgrey;
     text-align: left;
+    overflow: hidden;
 }
 
 li {
-    display: inline;
+    float: left;
+}
+
+li a {
+    color: white;
+    font-size: 40px;
+    display: block;
+    padding: 80 px;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    text-align:center;
 }
