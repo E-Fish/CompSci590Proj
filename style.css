@@ -15,7 +15,7 @@ ul{
 }
 
 li {
-    float: right;
+    float: left;
     border-right: 25px solid rgb(255, 255, 255);
 }
 
