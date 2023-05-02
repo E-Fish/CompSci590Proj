@@ -6,6 +6,8 @@
 .navbar {
     overflow: hidden;
     background-color: white;
+    border-bottom: 5px solid darkred;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
   }
   
   /* Navigation links */
@@ -13,6 +15,7 @@
     float: left;
     font-size: 16px;
     color: darkred;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
     text-align: center;
     padding: 25px 50px;
     text-decoration: none;
@@ -22,6 +25,7 @@
   .subnav {
     float: left;
     overflow: hidden;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
   }
   
   /* Subnav button */
@@ -30,6 +34,7 @@
     border: none;
     outline: none;
     color: darkred;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
     padding: 25px 50px;
     background-color: inherit;
     font-family: inherit;
@@ -40,6 +45,7 @@
   .navbar a:hover, .subnav:hover .subnavbtn {
     background-color: darkred;
     color:white;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
   }
   
   /* Style the subnav content - positioned absolute */
@@ -56,6 +62,7 @@
   /* Style the subnav links */
   .subnav-content a {
     float: left;
+    padding: 25px 35px;
     color: darkred;
     text-decoration: none;
   }
@@ -64,11 +71,13 @@
   .subnav-content a:hover {
     background-color: darkred;
     color: white;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
   }
   
   /* When you move the mouse over the subnav container, open the subnav content */
   .subnav:hover .subnav-content {
     display: block;
+    border-bottom: 5px solid darkred;
   }
 h1 {
     color: darkred;
