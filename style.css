@@ -1,6 +1,6 @@
 *{
     font-family: sans-serif;
-    background-color: rgb(181, 32, 32);
+    background-color: white;
 }
 
 ul{
@@ -8,31 +8,59 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: rgb(30, 30, 30);
+    background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
 }
 
 li {
-    float: left;
-    border-right: 1px solid grey;
+    float: right;
+    border-right: 25px solid rgb(255, 255, 255);
 }
 
 li a {
     display: block;
-    color: white;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+    color: darkred;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 60px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: black;
+    background-color: darkred;
+    color: white;
 }
 
 h1 {
-    color: white;
+    color: darkred;
     font-size: 70px;
     text-align:center;
+    margin-bottom: 30px;
+    margin-top: 90px;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+h3 {
+    color: black;
+    font-size: 40px;
+    text-align:center;
+    margin: 10px 0;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+input[type=text] {
+    width: 40%;
+    padding: 5px 20px;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    transition: width 0.4s ease-in-out;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+input[type=text]:focus {
+    width: 50%;
 }
