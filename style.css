@@ -23,9 +23,10 @@
 }
 /* The navigation menu */
 .navbar {
-    overflow: auto;
+    overflow: hidden;
     background-color: white;
-    border-bottom: 5px solid darkred;
+   
+    border-bottom: 2px solid darkred;
     font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
   }
   
@@ -37,7 +38,7 @@
     color: darkred;
     font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
     text-align: center;
-    padding: 20px 75px;
+    padding: 15px 8%;
     text-decoration: none;
   }
   
@@ -55,7 +56,8 @@
     outline: none;
     color: darkred;
     font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-    padding: 25px 79px;
+    padding-left: 30%;
+    padding: 15px 30px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -73,7 +75,7 @@
     display: none;
     position: absolute;
     left: 0;
-    padding: 5px 10px;
+    padding: 4px 10px;
     background-color: white;
     width: 100%;
     z-index: 1;
@@ -82,7 +84,9 @@
   /* Style the subnav links */
   .subnav-content a {
     float: left;
-    padding: 25px 47px;
+    padding: 15px 20px;
+    font-weight: normal;
+    font-size: medium;
     color: darkred;
     text-decoration: none;
   }
@@ -97,9 +101,8 @@
   /* When you move the mouse over the subnav container, open the subnav content */
   .subnav:hover .subnav-content {
     display: block;
-    border-bottom: 5px solid darkred;
+    border-bottom: 2px solid darkred;
   }
-  
 h1 {
     color: darkred;
     font-size: 70px;
@@ -131,4 +134,3 @@ input[type=text] {
 input[type=text]:focus {
     width: 50%;
 }
-/*round text box and make it glow red when hovered, dropdown options from search bar*/
