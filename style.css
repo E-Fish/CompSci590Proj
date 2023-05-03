@@ -2,6 +2,25 @@
     font-family: sans-serif;
     background-color: white;
 }
+
+.button {
+  background-color: darkred;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 /* The navigation menu */
 .navbar {
     overflow: hidden;
@@ -13,7 +32,8 @@
   /* Navigation links */
   .navbar a {
     float: left;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 20px;
     color: darkred;
     font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
     text-align: center;
@@ -84,7 +104,7 @@ h1 {
     font-size: 70px;
     text-align:center;
     margin-bottom: 30px;
-    margin-top: 90px;
+    margin-top: 40px;
     font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
@@ -110,3 +130,4 @@ input[type=text] {
 input[type=text]:focus {
     width: 50%;
 }
+/*round text box and make it glow red when hovered, dropdown options from search bar*/
