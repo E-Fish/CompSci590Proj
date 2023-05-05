@@ -1,125 +1,177 @@
 *{
-  font-family: sans-serif;
-  background-color: white;
+    font-family: sans-serif;
+    background-color: white;
 }
 
 .button {
-background-color: darkred;
-border: none;
-color: white;
-padding: 25px 75px;
-text-align: center;
-text-decoration: none;
-float: right;
-border-radius: 10px;
-font-size: 18px;
-margin: 0px 100px;
-cursor: pointer;
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.14), 0 17px 50px 0 rgba(0,0,0,0.14);
+  background-color: darkred;
+  border: none;
+  color: white;
+  padding: 15px 28px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.14), 0 17px 50px 0 rgba(0,0,0,0.14);
 }
 
 .button:hover {
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
 /* The navigation menu */
 .navbar {
-  overflow: hidden;
-  background-color: white; 
-  border-bottom: 3px solid darkred;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 2px solid darkred;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    color: darkred;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+    text-align: center;
+    padding: 15px 8%;
+    text-decoration: none;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: darkred;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+    padding-left: 30%;
+    padding: 15px 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: darkred;
+    color:white;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 4px 10px;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    padding: 15px 20px;
+    font-weight: normal;
+    font-size: medium;
+    color: darkred;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: darkred;
+    color: white;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+    border-bottom: 2px solid darkred;
+  }
 
-/* Navigation links */
-.navbar a {
-  float: left;
-  font-weight: bold;
-  font-size: 20px;
-  color: darkred;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-  text-align: center;
-  padding: 15px 200px;
-  text-decoration: none;
-}
-
-/* The subnavigation menu */
-.subnav {
-  float: left;
-  overflow: hidden;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* Subnav button */
-.subnav .subnavbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: darkred;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-  padding-left: 30%;
-  padding: 15px 50px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-/* Add a red background color to navigation links on hover */
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: darkred;
-  color:white;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* Style the subnav content - positioned absolute */
-.subnav-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  padding: 4px 15px;
-  background-color: white;
-  width: 100%;
-  z-index: 1;
-}
-
-/* Style the subnav links */
-.subnav-content a {
-  float: left;
-  padding: 15px 40px;
-  font-weight: normal;
-  font-size: 15px;
-  color: darkred;
-  text-decoration: none;
-}
-
-/* Add a grey background color on hover */
-.subnav-content a:hover {
-  background-color: darkred;
-  color: white;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* When you move the mouse over the subnav container, open the subnav content */
-.subnav:hover .subnav-content {
-  display: block;
-  border-bottom: 3px solid darkred;
-}
 h1 {
-  color: darkred;
-  font-size: 70px;
-  text-align:center;
-  margin-bottom: 30px;
-  margin-top: 40px;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+    color: darkred;
+    font-size: 70px;
+    text-align:center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
 h3 {
-  color: black;
-  font-size: 40px;
+    color: darkred;
+    font-size: 20px;
+    text-align:center;
+    margin: 10px 0;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+.labelsf {
+  color: darkred;
+  font-size: 20px;
   text-align:center;
-  margin: 10px 0;
+  margin: 30px 0;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
+
+
+input[type=text] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8 auto;
+  display: block;
+  box-sizing: border-box;
+  transition: width 0.4s ease-in-out;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+
+input[type=text]:focus {
+  border: 1.5px solid #555;
+}
+
+input[type=text]:hover {
+    width: 20%;
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+
+/*code for home page submit button
 input[type=text] {
   width: 40%;
   padding: 5px 20px;
@@ -134,3 +186,5 @@ input[type=text] {
 input[type=text]:focus {
   width: 50%;
 }
+
+/*round text box and make it glow red when hovered, dropdown options from search bar*/
