@@ -133,6 +133,7 @@ h3 {
 input[type=text] {
   width: 20%;
   padding: 12px 20px;
+  margin-left: 40%;
   margin: 8 auto;
   display: block;
   box-sizing: border-box;
@@ -171,8 +172,7 @@ input[type=text]:hover {
   width: 0%;
 }
 
-/*code for home page submit button
-input[type=text] {
+.index input[type=text] {
   width: 40%;
   padding: 5px 20px;
   margin: 0 auto;
@@ -181,10 +181,27 @@ input[type=text] {
   transition: width 0.4s ease-in-out;
   border: none;
   border-bottom: 2px solid black;
+  border-radius: 0px;
 }
 
-input[type=text]:focus {
-  width: 50%;
+.index input[type=text]:focus {
+  width: 43%;
 }
 
-/*round text box and make it glow red when hovered, dropdown options from search bar*/
+table, td, th {
+  border: 2px solid;
+}
+
+table {
+  margin-left: 15%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 70%;
+  height: 100px;
+  border-collapse: collapse;
+}
+table td:nth-child(1){
+  width: 200%;
+  height: 100px;
+  border-collapse: collapse;
+}
