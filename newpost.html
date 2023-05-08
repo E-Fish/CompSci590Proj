@@ -99,16 +99,22 @@
 
         <div>
             <form action="/action_page.php">
-                <label class="labelsf" for="username">Username</label>
+              <table>
+                <tr>
+                  <th></th>
+                <th><label class="labelsf" for="username">Username</label>
                 <input type="text" id="username" name="username" placeholder="Create a username ...">
-                <br>
+                </th>
+                <th>
                 <label class="labelsf" for="coursecode">Course code</label>
                 <input type="text" id="coursecode" name="coursecode" placeholder="Course code as it appears in the course catalog ...">
-                </br>
-                <br>
+                </th>
+                </tr>
+                <tr>
+                  <th></th>
+                <th>
                 <label class="labelsf" for="term">Term you took the course:</label>
                 <select id="term" name="term">
-                </br>
                 <div class="formfrq">
                     <option value="fall2020">Fall 2020</option>
                     <option value="winter2020">Winter 2020-2021</option>
@@ -120,21 +126,27 @@
                     <option value="winter2022">Winter 2022-2023</option>
                     <option value="spring2023">Spring 2023</option>
                 </div>
+                </th>
                 </select>
-                
-                <br><br>
-                <br>
+                </tr>
+                <tr>
+                  <th></th>
+                <th>
                 <label class="labelsf" for="teachername">Teacher's first and last name</label>
                 <input type="text" id="teachername" name="teachername" placeholder="Your teacher's full name ...">
-                </br>
-                <br>
+                </th>
+                <th>
                 <label class="labelsf" for="rating">Course Rating</label>
                 <input type="text" id="rating" name="rating" placeholder="Rate this course out of 5">
                 </br>
-                <br>
+                </th>
+                </tr>
+                <th></th>
+                <th>
                 <label class="labelsf" for="comments">Comments (How did you enjoy the course? Would you recomend it to others?)<br></label>
                 <textarea rows="5" cols="40" id = "comments" name = "comments"> </textarea>
-                </br>
+                </th>
+              </table>
                 <input type="submit" class="button" value="Submit">
             </form>
         </div>
