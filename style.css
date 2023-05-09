@@ -86,6 +86,7 @@
 .subnav-content a {
   float: left;
   padding: 15px 20px;
+  margin-left: 11%;
   font-weight: normal;
   font-size: medium;
   color: darkred;
