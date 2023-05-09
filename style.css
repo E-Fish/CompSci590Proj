@@ -35,11 +35,11 @@
 .navbar a {
   float: left;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   color: darkred;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
   text-align: center;
-  padding: 15px 8%;
+  padding: 11px 11%;
   text-decoration: none;
 }
 
