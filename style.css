@@ -39,7 +39,7 @@
   color: darkred;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
   text-align: center;
-  padding: 11px 11%;
+  padding: 10px 11%;
   text-decoration: none;
 }
 
@@ -86,7 +86,6 @@
 .subnav-content a {
   float: left;
   padding: 15px 20px;
-  margin-left: 11%;
   font-weight: normal;
   font-size: medium;
   color: darkred;
@@ -140,7 +139,7 @@ h4 {
   font-size: 40px;
   text-align:left;
   margin-top: -40px;
-  margin-left: 70px;
+  margin-left: 100px;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
@@ -227,8 +226,8 @@ table, td, th {
 }
 
 table {
-  margin-left: 15%;
-  width: 70%;
+  margin-left: 5%;
+  width:90%;
   border-collapse: collapse;
 }
 
