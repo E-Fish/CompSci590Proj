@@ -263,9 +263,9 @@ table td:nth-child(1){
   width: 78%;
   height: 15px;
   border-radius: 5px;  
-  background: #d3d3d3;
+  background: #E0E0E0;
   outline: none;
-  opacity: 0.7;
+  opacity: 1;
   -webkit-transition: .2s;
   transition: opacity .2s;
 }
