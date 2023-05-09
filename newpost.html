@@ -96,9 +96,9 @@
 
     <body>
         <!-- Header on top of page -->
-        <h1>
+        <h2>
           Create a New Post        
-        </h1>
+        </h2>
 
         <!-- Table and content inside the table -->
         <div>
@@ -110,13 +110,15 @@
                 <tr>
                   <th>
                     <br>
-                    <label class="labelsf" for="username">Username</label>
+                    <label class="labelsf" for="username">Username:</label>
                     <input type="text" id="username" name="username" placeholder="Create a username ...">
                     <br>
                   </th>
                   <th>
-                    <label class="labelsf" for="coursecode">Course ID</label>
-                    <input type="text" id="coursecode" name="coursecode" placeholder="Same as in the course catalog...">
+                    <label class="labelsf" for="coursecode">Course ID:</label>
+                    <div class="ids">
+                      <input type="text" id="coursecode" name="coursecode" placeholder="Same as in the course catalog...">
+                    </div>
                   </th>
                 </tr>
                 <!-- Second Row -->
@@ -144,13 +146,15 @@
                 <tr>
                   <th>
                     <br>
-                    <label class="labelsf" for="teachername">Teacher's first and last name</label>
+                    <label class="labelsf" for="teachername">Teacher's first and last name:</label>
                     <input type="text" id="teachername" name="teachername" placeholder="Enter name...">
                     <br>
                   </th>
                   <th>
-                    <label class="labelsf" for="rating">Course Rating</label>
-                    <input type="text" id="rating" name="rating" placeholder="Rate this course out of 5">
+                    <label class="labelsf" for="rating">Course Rating:</label>
+                    <div class="slidecontainer">
+                      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
                   </th>
                 </tr>
                 <!-- Fourth Row -->
