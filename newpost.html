@@ -1,149 +1,167 @@
 <!DOCTYPE html>
 <html>
-
+    <!-- Setting CSS and title -->
     <head>
         <link rel="stylesheet" type="text/css" href="style.css" >
         <title>
             New Post
         </title>
     </head> 
+
+    <!-- Navbar stuff: Same on all tabs -->
+    <div class="navbar">
+      <div class="RatePEA">
+        <a class = "active" href="#RatePEA">RatePEA</a>
+      </div>
+      
+      <div class="subnav">
+        <button class="subnavbtn">Art</button>
+        <div class="subnav-content">
+            <a href="#a2">200s</a>
+            <a href="#a3">300s</a>
+            <a href="#a4">400s</a>
+            <a href="#a5">500s</a>
+            <a href="#ao">Others</a>
+        </div>
+      </div>
+
+      <div class="subnav">
+        <button class="subnavbtn">English</button>
+        <div class="subnav-content">
+          <a href="#eg">General</a>
+          <a href="#ee">Electives</a>
+        </div>
+      </div>
+
+      <div class="subnav">
+        <button class="subnavbtn">History</button>
+        <div class="subnav-content">
+            <a href="#h2">200s</a>
+            <a href="#h3">300s</a>
+            <a href="#hus">US History</a>
+            <a href="#h5">500s</a>
+            <a href="#ho">Others</a>
+        </div>
+      </div>
+
+      <div class="subnav">
+        <button class="subnavbtn">Langauge</i></button>
+        <div class="subnav-content">
+          <a href="#lspa">Spanish</a>
+          <a href="#lfre">French</a>
+          <a href="#lman">Chinese</a>
+          <a href="#lger">German</a>
+          <a href="#ljap">Japanese</a>
+          <a href="#lrus">Russian</a>
+          <a href="#lita">Italian</a>
+          <a href="#lara">Arabic</a>
+          <a href="#llat">Latin</a>
+          <a href="#lgre">Classical Greek</a>
+        </div>
+      </div>
+
+      <div class="subnav">
+        <button class="subnavbtn">Math</button>
+        <div class="subnav-content">
+          <a href="#m1">100s</a>
+          <a href="#m2">200s</a>
+          <a href="#m3">300s</a>
+          <a href="#m4">400s</a>
+          <a href="#m5">500s</a>
+          <a href="#me">Electives</a>
+        </div>
+      </div>
+
+      <div class="subnav">
+        <button class="subnavbtn">Religion</button>
+        <div class="subnav-content">
+          <a href="#r2">200s</a>
+          <a href="#r3">300s</a>
+          <a href="#r4">400s</a>
+          <a href="#r5">500s</a>
+          <a href="#ro">Others</a>
+        </div>
+      </div>
+
+      <div class="subnav">
+        <button class="subnavbtn">Science</button>
+        <div class="subnav-content">
+          <a href="#sbio">Biology</a>
+          <a href="#schem">Chemestry</a>
+          <a href="#sphy">Physics</a>
+          <a href="#scs">CompSci</a>
+        </div>
+      </div>
+    </div>
+
     <body>
-        <div class="navbar">
-            <div class="RatePEA">
-              <a href="#RatePEA">RatePEA</a>
-            </div>
-
-            <div class="subnav">
-              <button class="subnavbtn">Art</button>
-              <div class="subnav-content">
-                  <a href="#a2">200s</a>
-                  <a href="#a3">300s</a>
-                  <a href="#a4">400s</a>
-                  <a href="#a5">500s</a>
-                  <a href="#ao">Others</a>
-              </div>
-            </div>
-
-            <div class="subnav">
-              <button class="subnavbtn">English</button>
-              <div class="subnav-content">
-                <a href="#eg">General</a>
-                <a href="#ee">Electives</a>
-              </div>
-            </div>
-
-            <div class="subnav">
-              <button class="subnavbtn">History</button>
-              <div class="subnav-content">
-                  <a href="#h2">200s</a>
-                  <a href="#h3">300s</a>
-                  <a href="#hus">US History</a>
-                  <a href="#h5">500s</a>
-                  <a href="#ho">Others</a>
-              </div>
-            </div>
-
-            <div class="subnav">
-              <button class="subnavbtn">Langauge</i></button>
-              <div class="subnav-content">
-                <a href="#lspa">Spanish</a>
-                <a href="#lfre">French</a>
-                <a href="#lman">Mandarin</a>
-                <a href="#lger">German</a>
-                <a href="#ljap">Japanese</a>
-                <a href="#lrus">Russian</a>
-                <a href="#lita">Italian</a>
-                <a href="#lara">Arabic</a>
-                <a href="#llat">Latin</a>
-                <a href="#lgre">Classical Greek</a>
-              </div>
-            </div>
-
-            <div class="subnav">
-              <button class="subnavbtn">Math</button>
-              <div class="subnav-content">
-                <a href="#m1">100s</a>
-                <a href="#m2">200s</a>
-                <a href="#m3">300s</a>
-                <a href="#m4">400s</a>
-                <a href="#m5">500s</a>
-                <a href="#me">Electives</a>
-              </div>
-            </div>
-
-            <div class="subnav">
-              <button class="subnavbtn">Religion</button>
-              <div class="subnav-content">
-                <a href="#r2">200s</a>
-                <a href="#r3">300s</a>
-                <a href="#r4">400s</a>
-                <a href="#r5">500s</a>
-                <a href="#ro">Others</a>
-              </div>
-            </div>
-
-            <div class="subnav">
-              <button class="subnavbtn">Science</button>
-              <div class="subnav-content">
-                <a href="#sbio">Biology</a>
-                <a href="#schem">Chemestry</a>
-                <a href="#sphy">Physics</a>
-                <a href="#scs">CompSci</a>
-              </div>
-            </div>
-          </div>
-
+        <!-- Header on top of page -->
         <h1>
-            Create a New Post
+          Create a New Post        
         </h1>
 
+        <!-- Table and content inside the table -->
         <div>
+            <!-- Declaring form -->
             <form action="/action_page.php">
+              <!-- Creating table -->
               <table>
+                <!-- First Row -->
                 <tr>
-                <th><label class="labelsf" for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Create a username ...">
-                </th><br><br>
-                <th>
-                <label class="labelsf" for="coursecode">Course ID</label>
-                <input type="text" id="coursecode" name="coursecode" placeholder="Same as in the course catalog...">
-                </th><br><br>
+                  <th>
+                    <br>
+                    <label class="labelsf" for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Create a username ...">
+                    <br>
+                  </th>
+                  <th>
+                    <label class="labelsf" for="coursecode">Course ID</label>
+                    <input type="text" id="coursecode" name="coursecode" placeholder="Same as in the course catalog...">
+                  </th>
                 </tr>
+                <!-- Second Row -->
                 <tr>
-                <th>
-                <label class="labelsf" for="term">Term you took the course:</label>
-                <select id="term" name="term">
-                <div class="formfrq">
-                    <option value="fall2020">Fall 2020</option>
-                    <option value="winter2020">Winter 2020-2021</option>
-                    <option value="spring2021">Spring 2021</option>
-                    <option value="fall2021">Fall 2021</option>
-                    <option value="winter2021">Winter 2021-2022</option>
-                    <option value="spring2022">Spring 2022</option>
-                    <option value="fall2022">Fall 2022</option>
-                    <option value="winter2022">Winter 2022-2023</option>
-                    <option value="spring2023">Spring 2023</option>
-                </div><br><br>
-                </th>
-                </select>
+                  <th>
+                    <br>
+                    <label class="labelsf" for="term">Term you took the course:</label>
+                    <select id="term" name="term">
+                      <div class="formfrq">
+                        <option value="fall2020">Fall 2020</option>
+                        <option value="winter2020">Winter 2020-2021</option>
+                        <option value="spring2021">Spring 2021</option>
+                        <option value="fall2021">Fall 2021</option>
+                        <option value="winter2021">Winter 2021-2022</option>
+                        <option value="spring2022">Spring 2022</option>
+                        <option value="fall2022">Fall 2022</option>
+                        <option value="winter2022">Winter 2022-2023</option>
+                        <option value="spring2023">Spring 2023</option>
+                      </div>                 
+                    </select>
+                    <br>
+                  </th>
                 </tr>
+                <!-- Third Row -->
                 <tr>
-                <th>
-                <label class="labelsf" for="teachername">Teacher's first and last name</label>
-                <input type="text" id="teachername" name="teachername" placeholder="Enter name...">
-                </th>
-                <th>
-                <label class="labelsf" for="rating">Course Rating</label>
-                <input type="text" id="rating" name="rating" placeholder="Rate this course out of 5">
-                </br>
-                </th>
+                  <th>
+                    <br>
+                    <label class="labelsf" for="teachername">Teacher's first and last name</label>
+                    <input type="text" id="teachername" name="teachername" placeholder="Enter name...">
+                    <br>
+                  </th>
+                  <th>
+                    <label class="labelsf" for="rating">Course Rating</label>
+                    <input type="text" id="rating" name="rating" placeholder="Rate this course out of 5">
+                  </th>
                 </tr>
+                <!-- Fourth Row -->
                 <th>
-                <label class="labelsf" for="comments">Comments (How did you enjoy the course? Would you recomend it to others?)<br></label>
-                <textarea rows="5" cols="40" id = "comments" name = "comments"> </textarea>
+                  <br>
+                  <label class="labelsf" for="comments">Comments (How did you enjoy the course? Would you recomend it to others?)<br></label>
+                  <textarea rows="5" cols="40" id = "comments" name = "comments"> </textarea>
+                  <br>
                 </th>
               </table>
-                <input type="submit" class="button" value="Submit">
+            <input type="submit" class="button" value="Submit">
             </form>
         </div>
     </body>
