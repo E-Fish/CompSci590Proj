@@ -2,17 +2,11 @@
 <html>
     <!-- Setting CSS and title -->
     <head>
-        <link rel="stylesheet" href="style.css" >
-            <title>
-                Course
-            </title>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <style>
-            .checked {
-              color: orange;
-            }
-            </style>
-    </head>
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <title>
+            New Post
+        </title>
+    </head> 
 
     <!-- Navbar stuff: Same on all tabs -->
     <div class="navbar">
@@ -100,33 +94,75 @@
       </div>
     </div>
 
-    <!-- Course Info -->
-    <!-- I'm not sure how we are going to be able to plug in the actual data here, I'm just putting text as a filler-->
     <body>
+        <!-- Header on top of page -->
         <h2>
-          Course Number: Coursename
+          Create a New Post        
         </h2>
-        <h4>
-          Rating:
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>         
-          <br>
-          Subject: xxx
-          <br>
-          Description: xxx
-        </h4>
+
+        <!-- Table and content inside the table -->
+        <div>
+            <!-- Declaring form -->
+            <form action="/action_page.php">
+              <!-- Creating table -->
+              <table>
+                <!-- First Row -->
+                <tr>
+                  <th>
+                    <br>
+                    <label class="labelsf" for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Create a username ...">
+                    <br>
+                  </th>
+                  <th>
+                    <label class="labelsf" for="coursecode">Course ID</label>
+                    <input type="text" id="coursecode" name="coursecode" placeholder="Same as in the course catalog...">
+                  </th>
+                </tr>
+                <!-- Second Row -->
+                <tr>
+                  <th>
+                    <br>
+                    <label class="labelsf" for="term">Term you took the course:</label>
+                    <select id="term" name="term">
+                      <div class="formfrq">
+                        <option value="fall2020">Fall 2020</option>
+                        <option value="winter2020">Winter 2020-2021</option>
+                        <option value="spring2021">Spring 2021</option>
+                        <option value="fall2021">Fall 2021</option>
+                        <option value="winter2021">Winter 2021-2022</option>
+                        <option value="spring2022">Spring 2022</option>
+                        <option value="fall2022">Fall 2022</option>
+                        <option value="winter2022">Winter 2022-2023</option>
+                        <option value="spring2023">Spring 2023</option>
+                      </div>                 
+                    </select>
+                    <br>
+                  </th>
+                </tr>
+                <!-- Third Row -->
+                <tr>
+                  <th>
+                    <br>
+                    <label class="labelsf" for="teachername">Teacher's first and last name </label>
+                    <input type="text" id="teachername" name="teachername" placeholder="Enter name...">
+                    <br>
+                  </th>
+                  <th>
+                    <label class="labelsf" for="rating">Course Rating</label>
+                    <input type="text" id="rating" name="rating" placeholder="Rate this course out of 5">
+                  </th>
+                </tr>
+                <!-- Fourth Row -->
+                <th>
+                  <br>
+                  <label class="labelsf" for="comments">Comments (How did you enjoy the course? Would you recomend it to others?)<br></label>
+                  <textarea rows="5" cols="40" id = "comments" name = "comments"> </textarea>
+                  <br>
+                </th>
+              </table>
+            <input type="submit" class="button" value="Submit">
+            </form>
+        </div>
     </body>
-    <!-- Table containing all the user posts -->
-    <table>
-      <tr>
-        <th>
-          <h5>
-            Posts go here
-          </h5>        
-        </th>
-      </tr>
-    </table>
 </html>
