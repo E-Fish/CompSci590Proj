@@ -162,9 +162,8 @@ h5 {
 
 /* For search bar on home and input queries on newPost */
 input[type=text] {
-  width: 20%;
+  width: 30%;
   padding: 12px 20px;
-  margin-left: 40%;
   margin: 8 auto;
   display: block;
   box-sizing: border-box;
@@ -178,7 +177,26 @@ input[type=text]:focus {
 }
 
 input[type=text]:hover {
-  width: 20%;
+  width: 30%;
+}
+
+.ids input[type=text] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8 auto;
+  display: block;
+  box-sizing: border-box;
+  transition: width 0.4s ease-in-out;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+
+.ids input[type=text]:focus {
+  border: 1.5px solid #555;
+}
+
+.ids input[type=text]:hover {
+  width: 90%;
 }
 
 /* Style the header: fixed position (always stay at the top) */
@@ -223,7 +241,7 @@ input[type=text]:hover {
 
 /* For Tables: */
 table, td, th {
-  border: 2px solid;
+  border: 0px solid;
 }
 
 table {
