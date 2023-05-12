@@ -8,7 +8,10 @@
         </title>
         <link rel="icon" href="favicon.ico" type="image/x-icon" >
     </head> 
+
+    <!-- Adding the courses to the page -->
     <body onload="addcourses()"> 
+
     <!-- Navbar stuff: Same on all tabs -->
     <div class="navbar">
         <div class="navbarRate">
@@ -88,27 +91,30 @@
           <button class="subnavbtn">Science</button>
           <div class="subnav-content">
             <a href="#sbio">Biology</a>
-            <a href="#schem">Chemestry</a>
+            <a href="#schem">Chemistry</a>
             <a href="#sphy">Physics</a>
             <a href="#scs">CompSci</a>
           </div>
         </div>
 
         <div class="NewPost">
-          <b class = "active" href="#New Post">New Post</b>
+          <b href="#New Post">New Post</b>
         </div>
       </div>
     
       <!-- Everything on the page -->
         <h1>
-            RatePEA <!--somehow make 23 smaller at the end -->
+            RatePEA<span>2023</span>
         </h1>
+
         <h3>
             Search Course:
         </h3>
         <form>
             <input type="text" id="coursesearch" onkeyup="filtercourses()" name="coursesearch" placeholder="Search here.."><br>
         </form>
+
+        <!-- Adding the add course and filter course functions/classes -->
         <div id="allcourses"></div>
         <script src="addcourses.js"></script>
         <script src="filtercourses.js"></script>
