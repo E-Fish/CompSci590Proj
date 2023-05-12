@@ -1,7 +1,6 @@
-/* Establish font and background color for whole page */
+/* Establish font for whole page */
 *{
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-  background-color: white;
 }
 
 /* For the "Submit" button on the newPost page*/
@@ -135,6 +134,27 @@ h1 {
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
+h1:hover {
+  color: white;
+  font-size: 70px;
+  background-color: darkred;
+  text-align:center;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+/* This is for the RATEPea page header*/
+h6 {
+  color: darkred;
+  font-size: 70px;
+  text-size-adjust: 30x;
+  text-align:center;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
 /* To make the "2023" smaller at the end */
 span {
   color: darkred;
@@ -145,7 +165,7 @@ span {
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-/* For Course */
+/* For Course and newPost course headers */
 h2 {
   color: darkred;
   font-size: 70px;
@@ -158,6 +178,22 @@ h2 {
 /* For search bar on Homepage */
 h3 {
   color: darkred;
+  font-size: 20px;
+  text-align:center;
+  margin: 10px 0;
+  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+h3 a {
+  color: darkred;
+  font-size: 20px;
+  text-align:center;
+  margin: 10px 0;
+  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+h3:hover {
+  color: white;
   font-size: 20px;
   text-align:center;
   margin: 10px 0;
@@ -217,8 +253,9 @@ input[type=text]:hover {
 
 /* For certain inputs on the newPost page */
 .ids input[type=text] {
-  width: 90%;
+  width: 40%;
   padding: 12px 20px;
+  margin-left: 0%;
   margin: 8 auto;
   display: block;
   box-sizing: border-box;
@@ -229,6 +266,10 @@ input[type=text]:hover {
 
 .ids input[type=text]:focus {
   border: 1.5px solid #555;
+}
+
+.ids input[type=text]:hover {
+  width: 45%;
 }
 
 /* Style the header: fixed position (always stay at the top) */
@@ -254,7 +295,7 @@ input[type=text]:hover {
   width: 0%;
 }
 
-/*What is this and the next block doing? */
+/*For search bar on home page */
 .index input[type=text] {
   width: 40%;
   padding: 5px 20px;
@@ -346,7 +387,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp
   margin-left: 15%; /* space outside card to separate cards */
   margin-right: 15%; /* space outside card to separate cards */
   margin-top: 30px;
-  border: 2px solid #9A1D2E; /* Exeter color */
+  border: 2px solid darkred; 
   padding: 2px 16px;  /* spacing inside card around text */
   border-radius: 25px; /* rounded borders */
   color: darkred;
@@ -356,5 +397,17 @@ https://www.w3schools.com/howto/howto_css_cards.asp
 
 .courseCard:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  background-color: #9A1D2E; /* Exeter color */
+  background-color: darkred;
+  color: white; /* making text white */
+  
+}
+
+.courseCard:hover h1 {
+  transition: 0.25s;
+  color: white; /* making text white */
+}
+
+.courseCard:hover h3 {
+  transition: 0.25s;
+  color: white; /* making text white */
 }
