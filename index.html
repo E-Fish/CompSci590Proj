@@ -11,7 +11,7 @@
     <body onload="addcourses()"> 
     <!-- Navbar stuff: Same on all tabs -->
     <div class="navbar">
-        <div class="RatePEA">
+        <div class="navbarRate">
           <a class = "active" href="#RatePEA">RatePEA</a>
         </div>
         
@@ -93,6 +93,10 @@
             <a href="#scs">CompSci</a>
           </div>
         </div>
+
+        <div class="NewPost">
+          <b class = "active" href="#New Post">New Post</b>
+        </div>
       </div>
     
       <!-- Everything on the page -->
@@ -106,7 +110,6 @@
             <input type="text" id="coursesearch" onkeyup="filtercourses()" name="coursesearch" placeholder="Search here.."><br>
         </form>
         <div id="allcourses"></div>
-        <a href="#newpostb" class="button">NewPOST</a>
         <script src="addcourses.js"></script>
         <script src="filtercourses.js"></script>
     </body>
