@@ -87,7 +87,7 @@
         <button class="subnavbtn">Science</button>
         <div class="subnav-content">
           <a href="#sbio">Biology</a>
-          <a href="#schem">Chemestry</a>
+          <a href="#schem">Chemistry</a>
           <a href="#sphy">Physics</a>
           <a href="#scs">CompSci</a>
         </div>
@@ -104,28 +104,27 @@
         <div>
             <!-- Declaring form -->
             <form action="/action_page.php">
-              <!-- Creating table -->
+              <!-- Creating table 1 (Username)-->
               <table>
-                <!-- First Row -->
-                <tr>
-                  <th>
-                    <br>
-                    <label class="labelsf" for="username">Username:</label>
-                    <input type="text" id="username" name="username" placeholder="Create a username ...">
-                    <br>
-                  </th>
-                  <th>
-                    <label class="labelsf" for="coursecode">Course ID:</label>
-                    <div class="ids">
-                      <input type="text" id="coursecode" name="coursecode" placeholder="Same as in the course catalog...">
-                    </div>
-                  </th>
-                </tr>
-                <!-- Second Row -->
-                <tr>
-                  <th>
-                    <br>
-                    <label class="labelsf" for="term">Term you took the course:</label>
+                 <th>
+                  <br>
+                  <label class="labelsf" for="username">Username:</label>
+                  <input type="text" id="username" name="username" placeholder="Create a username ...">
+                  <br>
+                </th>
+              </table>
+              <br>
+              <!-- Creating table 2 (Course related information/inputs) -->
+              <table>
+                <th>
+                  <label class="labelsf" for="coursecode">Course ID:</label>
+                  <div class="ids">
+                    <input type="text" id="coursecode" name="coursecode" placeholder="As listed in the course catalog... ie. MAT321 or ANT500">
+                  </div>
+                </th>
+                <th>
+                  <br>
+                  <label class="labelsf" for="term">Term you took the course:</label>
                     <select id="term" name="term">
                       <div class="formfrq">
                         <option value="fall2020">Fall 2020</option>
@@ -139,32 +138,37 @@
                         <option value="spring2023">Spring 2023</option>
                       </div>                 
                     </select>
-                    <br>
-                  </th>
-                </tr>
-                <!-- Third Row -->
-                <tr>
-                  <th>
-                    <br>
-                    <label class="labelsf" for="teachername">Teacher's first and last name:</label>
-                    <input type="text" id="teachername" name="teachername" placeholder="Enter name...">
-                    <br>
-                  </th>
-                  <th>
-                    <label class="labelsf" for="rating">Course Rating:</label>
-                    <div class="slidecontainer">
-                      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                    </div>
-                  </th>
-                </tr>
-                <!-- Fourth Row -->
+                  <br>
+                </th>
+                <th>
+                  <label class="labelsf" for="rating">Course Rating:</label>
+                  <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                  </div>
+                </th>
+              </table>
+              <br>
+              <!-- Creating table 3 (Teacher related information/inputs) -->
+              <table>
                 <th>
                   <br>
-                  <label class="labelsf" for="comments">Comments (How did you enjoy the course? Would you recomend it to others?)<br></label>
+                  <label class="labelsf" for="teachername">Teacher's first and last name:</label>
+                  <input type="text" id="teachername" name="teachername" placeholder="Enter name...">
+                  <br>
+                </th>
+              </table>
+              <br>
+              <!-- Creating table 4 (Course Comment/Review) -->
+              <table>
+                <th>
+                  <br>
+                  <label class="labelsf" for="comments">Comments and Review (How did you enjoy the course? Would you recomend it to others?)<br></label>
                   <textarea rows="5" cols="40" id = "comments" name = "comments"> </textarea>
                   <br>
                 </th>
               </table>
+              </table>
+            <!-- Submit Button -->
             <input type="submit" class="button" value="Submit">
             </form>
         </div>
