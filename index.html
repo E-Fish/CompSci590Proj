@@ -8,7 +8,7 @@
         </title>
         <link rel="icon" href="favicon.ico" type="image/x-icon" >
     </head> 
-
+    <body onload="addcourses()"> 
     <!-- Navbar stuff: Same on all tabs -->
     <div class="navbar">
         <div class="RatePEA">
@@ -96,7 +96,6 @@
       </div>
     
       <!-- Everything on the page -->
-      <body>
         <h1>
             RatePEA <!--somehow make 23 smaller at the end -->
         </h1>
@@ -104,11 +103,12 @@
             Search Course:
         </h3>
         <form>
-           <div class="index">
-            <input type="text" id="coursesearch" name="coursesearch" placeholder="Search here.."><br>
-          </div>
+            <input type="text" id="coursesearch" onkeyup="filtercourses()" name="coursesearch" placeholder="Search here.."><br>
         </form>
+        <div id="allcourses"></div>
         <a href="#newpostb" class="button">NewPOST</a>
+        <script src="addcourses.js"></script>
+        <script src="filtercourses.js"></script>
     </body>
 </html>
 
