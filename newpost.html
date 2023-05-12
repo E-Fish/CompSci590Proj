@@ -10,9 +10,7 @@
 
     <!-- Navbar stuff: Same on all tabs -->
     <div class="navbar">
-      <div class="RatePEA">
-        <a href="index.html">RatePEA</a>
-      </div>
+      <a class = "active" href="index.html">RatePEA</a>
       
       <div class="subnav">
         <button class="subnavbtn">Art</button>
@@ -92,14 +90,25 @@
           <a href="#scs">CompSci</a>
         </div>
       </div>
+
+      <b class = "active" href="newpost.html">New Post</b>
+
     </div>
 
     <body>
         <!-- Header on top of page -->
-        <h2>
-          Create a New Post        
-        </h2>
-
+        <div class="headert">
+        <table>
+          <th>
+            <h2>
+              Create a New Post        
+            </h2>
+          </th>
+          <th>
+            <input type="submit" class="button" value="Submit">
+          </th>
+        </table>
+        </div>
         <!-- Table and content inside the table -->
         <div>
             <!-- Declaring form -->
@@ -109,9 +118,7 @@
                  <th>
                   <br>
                   <label class="labelsf" for="username">Username:</label>
-                  <div class="ids">
                   <input type="text" id="username" name="username" placeholder="Create a username ...">
-                  </div>
                   <br>
                 </th>
               </table>
@@ -121,7 +128,7 @@
                 <th>
                   <label class="labelsf" for="coursecode">Course ID:</label>
                   <div class="ids">
-                    <input type="text" id="coursecode" name="coursecode" placeholder="As listed in the course catalog... ie. MAT321 or ANT500">
+                    <input type="text" id="coursecode" name="coursecode" placeholder="As listed in the course catalog... ie. MAT321">
                   </div>
                 </th>
                 <th>
@@ -154,9 +161,17 @@
               <table>
                 <th>
                   <br>
-                  <label class="labelsf" for="teachername">Teacher's first and last name:</label>
+                  <label class="labelsf" for="teachername">Teacher's first name:</label>
                   <div class="ids">
-                  <input type="text" id="teachername" name="teachername" placeholder="Enter name...">
+                  <input type="text" id="teacherfirstl" name="teacherfirst" placeholder="Enter name...">
+                  </div>
+                  <br>
+                </th>
+                <th>
+                  <br>
+                  <label class="labelsf" for="teachername">Teacher's last name:</label>
+                  <div class="ids">
+                  <input type="text" id="teacherlast" name="teacherlast" placeholder="Enter name...">
                   </div>
                   <br>
                 </th>
@@ -167,15 +182,12 @@
                 <th>
                   <br>
                   <label class="labelsf" for="comments">Comments and Review (How did you enjoy the course? Would you recomend it to others?)<br></label>
-                  <div class="ids">
                   <textarea rows="5" cols="40" id = "comments" name = "comments"> </textarea>
-                  </div>
                   <br>
                 </th>
               </table>
               </table>
             <!-- Submit Button -->
-            <input type="submit" class="button" value="Submit">
             </form>
         </div>
     </body>
