@@ -43,7 +43,7 @@ async function addcourses()
         mycard.appendChild(h3);
         mycard.appendChild(rating);
        
-        mycard.addEventListener("click", function() { clickedOnCourse(index); });
+        mycard.addEventListener("click", function() { clickedoncourse(index); });
        
         divTag.appendChild(mycard);
        
