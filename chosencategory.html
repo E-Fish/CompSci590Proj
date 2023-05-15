@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <!-- Setting CSS and Title -->
+    <head>
+        <link rel="stylesheet" href="style.css" >
+        <title>
+            Rate PEA 
+        </title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" >
+    </head> 
+
+    <!-- Adding the courses to the page -->
+    <body onload="addcourses()"> 
+
+    <!-- Navbar stuff: Same on all tabs -->
+    <div class="navbar">
+        <a class = "active" href="index.html">RatePEA</a>
+        
+        <div class="subnav">
+          <button class="subnavbtn">Art</button>
+          <div class="subnav-content">
+              <a href="#a2">200s</a>
+              <a href="#a3">300s</a>
+              <a href="#a4">400s</a>
+              <a href="#a5">500s</a>
+              <a href="#ao">Others</a>
+          </div>
+        </div>
+
+        <div class="subnav">
+          <button class="subnavbtn">English</button>
+          <div class="subnav-content">
+            <a href="#eg">General</a>
+            <a href="#ee">Electives</a>
+          </div>
+        </div>
+
+        <div class="subnav">
+          <button class="subnavbtn">History</button>
+          <div class="subnav-content">
+              <a href="#h2">200s</a>
+              <a href="#h3">300s</a>
+              <a href="#hus">US History</a>
+              <a href="#h5">500s</a>
+              <a href="#ho">Others</a>
+          </div>
+        </div>
+
+        <div class="subnav">
+          <button class="subnavbtn">Langauge</i></button>
+          <div class="subnav-content">
+            <a href="#lspa">Spanish</a>
+            <a href="#lfre">French</a>
+            <a href="#lman">Chinese</a>
+            <a href="#lger">German</a>
+            <a href="#ljap">Japanese</a>
+            <a href="#lrus">Russian</a>
+            <a href="#lita">Italian</a>
+            <a href="#lara">Arabic</a>
+            <a href="#llat">Latin</a>
+            <a href="#lgre">Classical Greek</a>
+          </div>
+        </div>
+
+        <div class="subnav">
+          <button class="subnavbtn">Math</button>
+          <div class="subnav-content">
+            <a href="#m1">100s</a>
+            <a href="#m2">200s</a>
+            <a href="#m3">300s</a>
+            <a href="#m4">400s</a>
+            <a href="#m5">500s</a>
+            <a href="#me">Electives</a>
+          </div>
+        </div>
+
+        <div class="subnav">
+          <button class="subnavbtn">Religion</button>
+          <div class="subnav-content">
+            <a href="#r2">200s</a>
+            <a href="#r3">300s</a>
+            <a href="#r4">400s</a>
+            <a href="#r5">500s</a>
+            <a href="#ro">Others</a>
+          </div>
+        </div>
+
+        <div class="subnav">
+          <button class="subnavbtn">Science</button>
+          <div class="subnav-content">
+            <a href="#sbio">Biology</a>
+            <a href="#schem">Chemistry</a>
+            <a href="#sphy">Physics</a>
+            <a href="#scs">CompSci</a>
+          </div>
+        </div>
+
+        <a href="newpost.html">New Post </a>
+
+      </div>
+    
+      <!-- Everything on the page -->
+        <h6>
+            RatePEA<span>2023</span>
+        </h6>
+
+        <h3>
+            <a>Search Course:</a>
+        </h3>
+        <form>
+          <div class="index">
+            <input type="text" id="coursesearch" onkeyup="filtercourses()" name="coursesearch" placeholder="Search here.."><br>
+          </div>
+        </form>
+
+        <!-- Adding the add course and filter course functions/classes -->
+        <div id="allcourses"></div>
+        <script src="addcourses.js"></script>
+        <script src="filtercourses.js"></script>
+    </body>
+</html>
+
+<!--ask ariana to do logo design - maybe clocktower to put digital sketch on main screen -->
