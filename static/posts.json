@@ -104,7 +104,7 @@
         "year": 2022
     },
     {
-        "body": "A lot more detail about why ANT500 was very interesting",
+        "body": "A lot more detail about the rating",
         "date": "2022-11-30 08:24:25",
         "fn": "",
         "indexCourse": 0,
@@ -112,12 +112,12 @@
         "indexTeacher": 2,
         "rating": 1,
         "term": "Winter",
-        "title": "ANT500 was very interesting",
+        "title": "Unclaer syllabus",
         "user": "User1",
         "year": 2022
     },
     {
-        "body": "A lot more detail about why ANT500 was very interesting",
+        "body": "A lot more detail about the rating",
         "date": "2022-09-10 22:36:46",
         "fn": "",
         "indexCourse": 0,
@@ -125,7 +125,7 @@
         "indexTeacher": 3,
         "rating": 3,
         "term": "Winter",
-        "title": "ANT500 was very interesting",
+        "title": "Great overall",
         "user": "User2",
         "year": 2022
     },
