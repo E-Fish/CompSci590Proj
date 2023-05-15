@@ -23,6 +23,11 @@ async function addcourses()
         //This creates the <h1> tag for the course name, e.g. "ANT500"
         let h1 = document.createElement("h1");
         h1.innerText = name;
+        
+        //This creates the rating stars on the page
+        let rating = document.createElement("div");
+        rating.classList.add("rating");
+        rating.innerHTML = '<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>';
        
         //This creates the <p> tag for the course title, e.g. "Cultural Anthropology"
         let p = document.createElement("p");
@@ -36,6 +41,7 @@ async function addcourses()
         mycard.appendChild(h1);
         mycard.appendChild(p);
         mycard.appendChild(h3);
+        mycard.appendChild(rating);
        
         mycard.addEventListener("click", function() { clickedOnCourse(index); });
        
