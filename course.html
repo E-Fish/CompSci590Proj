@@ -11,7 +11,7 @@
             <style>          
             </style>
     </head>
-
+    <body onload="addcoursereviews()">
     <!-- Navbar stuff: Basically same on all tabs -->
     <div class="navbar">
       <a href="index.html">RatePEA</a>
@@ -100,7 +100,6 @@
 
     <!-- Course Info -->
     <!-- I'm not sure how we are going to be able to plug in the actual data here, I'm just putting text as a filler-->
-    <body>
         <h2>
           Course Number: Coursename
         </h2>
@@ -116,15 +115,8 @@
           <br>
           Description: xxx
         </h4>
+    <div id="allreviews"></div>
+    <script src="addcoursereviews.js"></script>
+  </body>
     </body>
-    <!-- Table containing all the user posts -->
-    <table>
-      <tr>
-        <th>
-          <h5>
-            Posts go here
-          </h5>        
-        </th>
-      </tr>
-    </table>
 </html>
