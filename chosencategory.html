@@ -1,11 +1,10 @@
-<!--This is for when you use the nav bar to find a course-->
 <!DOCTYPE html>
 <html>
     <!-- Setting CSS and Title -->
     <head>
         <link rel="stylesheet" href="style.css" >
         <title>
-            Rate PEA 
+            Chosen Category
         </title>
         <link rel="icon" href="favicon.ico" type="image/x-icon" >
     </head> 
@@ -96,29 +95,13 @@
           </div>
         </div>
 
-        <a href="newpost.html">New Post </a>
+        <b class = "active" href="newpost.html">New Post</b>
 
       </div>
-    
-      <!-- Everything on the page -->
-        <h6>
-            RatePEA<span>2023</span>
-        </h6>
-
-        <h3>
-            <a>Search Course:</a>
-        </h3>
-        <form>
-          <div class="index">
-            <input type="text" id="coursesearch" onkeyup="filtercourses()" name="coursesearch" placeholder="Search here.."><br>
-          </div>
-        </form>
 
         <!-- Adding the add course and filter course functions/classes -->
         <div id="allcourses"></div>
         <script src="addcourses.js"></script>
-        <script src="filtercourses.js"></script>
+        <script src="clickedoncategory.js"></script>
     </body>
 </html>
-
-<!--ask ariana to do logo design - maybe clocktower to put digital sketch on main screen -->
