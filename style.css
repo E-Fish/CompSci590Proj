@@ -134,16 +134,6 @@ h1 {
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-h1:hover {
-  color: white;
-  font-size: 70px;
-  background-color: darkred;
-  text-align:center;
-  margin-bottom: 30px;
-  margin-top: 40px;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
 /* This is for the RATEPea page header*/
 h6 {
   color: darkred;
@@ -192,14 +182,6 @@ h3 a {
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-h3:hover {
-  color: white;
-  font-size: 20px;
-  text-align:center;
-  margin: 10px 0;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
 /* For rating in Course page */
 h4 {
   color: darkred;
@@ -228,8 +210,6 @@ h5 {
 }
 
 /* For search bar on home and some input queries on newPost */
-/*  Bit of a dilemma here. The margin-left needs to be set on 40% so the search bar on the home page looks good, */
-/* but needs to be 0% or 1% so the input boxes on newpost go the left */
 input[type=text] {
   width: 400pxpx;
   padding: 12px 20px;
