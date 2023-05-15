@@ -6,7 +6,7 @@ function clickedoncourse(index) {
     let collection = document.getElementsByClassName("courseCard");
    
     if (collection.length == 0) {
-        alert("clickedOnCourse: error getting course cards");
+        alert("clickedoncourse: error getting course cards");
     }
    
     let name = collection[index].childNodes[0].innerHTML;
