@@ -8,7 +8,6 @@
   background-color: darkred;
   border: none;
   color: white;
-
   padding: 15px 28px;
   text-align: center;
   text-decoration: none;
@@ -21,7 +20,7 @@
 }
 
 .button:hover {
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 /* The navigation menu */
@@ -224,6 +223,7 @@ input[type=text] {
 
 input[type=text]:focus {
   border: 1.5px solid #555;
+  outline: none;
 }
 
 /* For certain inputs on the newPost page */
@@ -241,6 +241,7 @@ input[type=text]:focus {
 
 .ids input[type=text]:focus {
   border: 1.5px solid #555;
+  outline: none;
 }
 
 /* To make datalist search bars look good */
@@ -254,7 +255,9 @@ input[type=text]:focus {
   transition: width 0.4s ease-in-out;
   border: 1px solid grey;
   border-radius: 8px;
+  outline: none;
 }
+
 
 /* Style the header: fixed position (always stay at the top) */
 .header {
