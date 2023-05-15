@@ -2,13 +2,13 @@
 <html>
     <!-- Setting CSS and title -->
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css" >
-        <title>
-            New Post
-        </title>
+      <link rel="stylesheet" type="text/css" href="style.css" >
+      <title>            
+        New Post
+      </title>
     </head> 
 
-   <!-- Navbar stuff: Same on all tabs -->
+    <!-- Navbar stuff: Same on all tabs -->
     <div class="navbar">
       <a href="index.html">RatePEA</a>
       
@@ -133,21 +133,22 @@
                 </th>
                 <th>
                   <br>
-                  <label class="labelsf" for="term">Term you took the course:</label>
-                    <select id="term" name="term">
-                      <div class="formfrq">
-                        <option value="fall2020">Fall 2020</option>
-                        <option value="winter2020">Winter 2020-2021</option>
-                        <option value="spring2021">Spring 2021</option>
-                        <option value="fall2021">Fall 2021</option>
-                        <option value="winter2021">Winter 2021-2022</option>
-                        <option value="spring2022">Spring 2022</option>
-                        <option value="fall2022">Fall 2022</option>
-                        <option value="winter2022">Winter 2022-2023</option>
-                        <option value="spring2023">Spring 2023</option>
-                      </div>                 
-                    </select>
-                  <br>
+                  <label class="labelsf" for="term">Term you took the course:</label>               
+                  <div class = "datalist">
+                    <input list = "term" placeholder="Search for Term">
+                    <datalist id="term">
+                      <option value="Fall2020"></option>
+                      <option value="Winter2020"></option>
+                      <option value="Spring2021"></option>
+                      <option value="Fall2021"></option>
+                      <option value="Winter2021"></option>
+                      <option value="Spring2022"></option>
+                      <option value="Fall2022"></option>
+                      <option value="Winter2022"></option>
+                      <option value="Spring2023"></option>             
+                    </datalist>
+                  </div>                 
+                <br>
                 </th>
                 <th>
                   <label class="labelsf" for="rating">Course Rating:</label>
@@ -161,19 +162,26 @@
               <table>
                 <th>
                   <br>
-                  <label class="labelsf" for="teachername">Teacher's first name:</label>
-                  <div class="ids">
-                  <input type="text" id="teacherfirstl" name="teacherfirst" placeholder="Enter name...">
-                  </div>
+                  <label class="labelsf" for="teachername">Teacher's Name:</label>
+                  <div class = "datalist">
+                    <input list = "teacher" placeholder="Search for Your Teacher!">
+                    <datalist id="teacher">
+                      <option value="TeacherA"></option>
+                      <option value="TeacherB"></option>
+                      <option value="TeacherC"></option>
+                      <option value="TeacherD"></option>
+                      <option value="TeacherE"></option>
+                      <option value="TeacherF"></option>
+                      <option value="TeacherG"></option>
+                      <option value="TeacherH"></option>
+                      <option value="TeacherI"></option>             
+                    </datalist>
+                  </div>                 
                   <br>
                 </th>
                 <th>
-                  <br>
-                  <label class="labelsf" for="teachername">Teacher's last name:</label>
-                  <div class="ids">
-                  <input type="text" id="teacherlast" name="teacherlast" placeholder="Enter name...">
-                  </div>
-                  <br>
+                  <label class="labelsf" for="teacherComments">Tell me about your Teacher. What dorm are they in? <br> Did they use reserve? What is their teaching style?<br></label>             
+                  <textarea rows="3" cols="50" id = "comments" name = "comments"> </textarea>
                 </th>
               </table>
               <br>
@@ -181,8 +189,8 @@
               <table>
                 <th>
                   <br>
-                  <label class="labelsf" for="comments">Comments and Review (How did you enjoy the course? Would you recomend it to others?)<br></label>
-                  <textarea rows="5" cols="40" id = "comments" name = "comments"> </textarea>
+                  <label class="labelsf" for="comments">Comments and Review (How did you enjoy the course? Would you recomend it to others?)</label>
+                  <textarea rows="10" cols="80" id = "comments" name = "comments"> </textarea>
                   <br>
                 </th>
               </table>
