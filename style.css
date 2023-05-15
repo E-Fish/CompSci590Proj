@@ -243,6 +243,19 @@ input[type=text]:focus {
   border: 1.5px solid #555;
 }
 
+/* To make datalist search bars look good */
+.datalist input {
+  width: 300px;
+  padding: 12px 20px;
+  margin-left: 0%;
+  margin: 8 auto;
+  display: block;
+  box-sizing: border-box;
+  transition: width 0.4s ease-in-out;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+
 /* Style the header: fixed position (always stay at the top) */
 .header {
   position: fixed;
