@@ -299,7 +299,7 @@ input[type=text]:focus {
   width: 43%;
 }
 
-/* For Tables: */
+/* For Tables */
 table, td, th {
   border: 0px solid;
 }
@@ -321,6 +321,7 @@ table td:nth-child(1){
   border-collapse: collapse;
 }
 
+/* For tables in newpost */
 .headert table {
   margin-left: 5%;
   text-align: left;
@@ -377,6 +378,7 @@ table td:nth-child(1){
 Used this a reference but removed the image tag
 https://www.w3schools.com/howto/howto_css_cards.asp
 */
+/* Formatting of coursecard on homepage */
 .courseCard {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.2s;
@@ -392,6 +394,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
+/* Formatting what happens when coursecards are hovered over */
 .courseCard:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   background-color: darkred;
