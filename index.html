@@ -12,13 +12,35 @@
 
     <!-- Adding the courses to the page -->
     <body onload="addcourses()"> 
-
+      <script> 
+        function art() { 
+          window.location = "chosencategory.html"; 
+        }
+        function english() { 
+          window.location = "chosencategory.html"; 
+        }
+        function history() { 
+          window.location = "chosencategory.html"; 
+        }
+        function language() { 
+          window.location = "chosencategory.html"; 
+        }
+        function math() { 
+          window.location = "chosencategory.html"; 
+        }
+        function religion() { 
+          window.location = "chosencategory.html"; 
+        }
+        function science() { 
+          window.location = "chosencategory.html"; 
+        }
+     </script>
     <!-- Navbar stuff: Same on all tabs -->
     <div class="navbar">
         <a class = "active" href="index.html">RatePEA</a>
         
         <div class="subnav">
-          <button class="subnavbtn">Art</button>
+          <button class="subnavbtn" onclick = "art()">Art</button>
           <div class="subnav-content">
               <a href="#a2">200s</a>
               <a href="#a3">300s</a>
@@ -29,7 +51,7 @@
         </div>
 
         <div class="subnav">
-          <button class="subnavbtn">English</button>
+          <button class="subnavbtn" onclick = "art()">English</button>
           <div class="subnav-content">
             <a href="#eg">General</a>
             <a href="#ee">Electives</a>
@@ -37,7 +59,7 @@
         </div>
 
         <div class="subnav">
-          <button class="subnavbtn">History</button>
+          <button class="subnavbtn" onclick = "history()">History</button>
           <div class="subnav-content">
               <a href="#h2">200s</a>
               <a href="#h3">300s</a>
@@ -48,7 +70,7 @@
         </div>
 
         <div class="subnav">
-          <button class="subnavbtn">Langauge</i></button>
+          <button class="subnavbtn" onclick = "language()">Langauge</i></button>
           <div class="subnav-content">
             <a href="#lspa">Spanish</a>
             <a href="#lfre">French</a>
@@ -64,7 +86,7 @@
         </div>
 
         <div class="subnav">
-          <button class="subnavbtn">Math</button>
+          <button class="subnavbtn" onclick = "art()">Math</button>
           <div class="subnav-content">
             <a href="#m1">100s</a>
             <a href="#m2">200s</a>
@@ -76,7 +98,7 @@
         </div>
 
         <div class="subnav">
-          <button class="subnavbtn">Religion</button>
+          <button class="subnavbtn" onclick = "religion()">Religion</button>
           <div class="subnav-content">
             <a href="#r2">200s</a>
             <a href="#r3">300s</a>
@@ -87,7 +109,7 @@
         </div>
 
         <div class="subnav">
-          <button class="subnavbtn">Science</button>
+          <button class="subnavbtn" onclick = "science()">Science</button>
           <div class="subnav-content">
             <a href="#sbio">Biology</a>
             <a href="#schem">Chemistry</a>
