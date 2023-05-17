@@ -338,6 +338,7 @@ table td:nth-child(1){
 /* For Star Rating */
 /* https://www.codewithrandom.com/2023/05/04/star-rating-using-html-css/ */
 .rating {
+  margin-left: -25px;
   width: 225px;
 }
 
@@ -352,7 +353,7 @@ table td:nth-child(1){
 
 /* Spacing Stars */
 .rating label:not(:first-of-type) {
-  padding-right: 3px;
+  padding-right: 0px;
 }
 
 /* What happens before stars are checked */
@@ -360,7 +361,7 @@ table td:nth-child(1){
   /* Code for stars */
   content: "\2605";
   /* Star size */
-  font-size: 44px;
+  font-size: 35px;
   color: #ccc;
   line-height: 1;
 }
@@ -428,4 +429,18 @@ https://www.w3schools.com/howto/howto_css_cards.asp
   margin-top: 10px; /* add some spacing between the title and the stars */
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.postCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 70%; /* let browser choose the width */
+  margin-left: 15%; /* space outside card to separate cards */
+  margin-right: 15%; /* space outside card to separate cards */
+  margin-top: 30px;
+  border: 2px solid darkred; 
+  padding: 2px 16px;  /* spacing inside card around text */
+  border-radius: 25px; /* rounded borders */
+  color: darkred;
+  text-align: center;
+  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
