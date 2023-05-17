@@ -13,115 +13,227 @@
     </head>
     <body onload="addcoursereviews()">
     <!-- Navbar stuff: Basically same on all tabs -->
-    <script> 
-      function art() { 
-        window.location = "chosencategory.html"; 
-      }
-      function english() { 
-        window.location = "chosencategory.html"; 
-      }
-      function history() { 
-        window.location = "chosencategory.html"; 
-      }
-      function language() { 
-        window.location = "chosencategory.html"; 
-      }
-      function math() { 
-        window.location = "chosencategory.html"; 
-      }
-      function religion() { 
-        window.location = "chosencategory.html"; 
-      }
-      function science() { 
-        window.location = "chosencategory.html"; 
-      }
-   </script>
-  <!-- Navbar stuff: Same on all tabs -->
-  <div class="navbar">
-      <a class = "active" href="index.html">RatePEA</a>
-      
-      <div class="subnav">
-        <button class="subnavbtn" onclick = "art()">Art</button>
-        <div class="subnav-content">
-            <a href="#a2">200s</a>
-            <a href="#a3">300s</a>
-            <a href="#a4">400s</a>
-            <a href="#a5">500s</a>
-            <a href="#ao">Others</a>
+    <body onload="addcourses()"> 
+      <script> 
+        function art(level) { 
+          window.location = "chosencategory.html"; 
+          if (level==a2){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==a3){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==a4){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==a5){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==ao){
+            window.location = "chosencategory.html"; 
+          }
+        }
+        function english() { 
+          window.location = "chosencategory.html"; 
+          if (level==eg){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==ee){
+            window.location = "chosencategory.html"; 
+          }
+        }
+        function history() { 
+          window.location = "chosencategory.html"; 
+          if (level==h2){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==h3){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==hus){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==h5){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==ho){
+            window.location = "chosencategory.html"; 
+          }
+        }
+        function language() { 
+          window.location = "chosencategory.html"; 
+          if (level==lsps){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==lfre){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==lchi){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==lger){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==ljap){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==lrus){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==lita){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==lara){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==llat){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==lgre){
+            window.location = "chosencategory.html"; 
+          }
+        }
+        function math() { 
+          window.location = "chosencategory.html"; 
+          if (level==m1){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==m2){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==m3){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==m4){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==m5){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==me){
+            window.location = "chosencategory.html"; 
+          }
+        }
+        function religion() { 
+          window.location = "chosencategory.html"; 
+          if (level==r2){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==r3){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==r4){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==r5){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==ro){
+            window.location = "chosencategory.html"; 
+          }
+        }
+        function science() { 
+          window.location = "chosencategory.html"; 
+          if (level==sb){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==sc){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==sp){
+            window.location = "chosencategory.html"; 
+          }
+          if (level==scs){
+            window.location = "chosencategory.html"; 
+          }
+        }
+     </script>
+    <!-- Navbar stuff: Same on all tabs -->
+    <div class="navbar">
+        <a class = "active" href="index.html">RatePEA</a>
+        
+        <div class="subnav">
+          <button class="subnavbtn" onclick = "art()">Art</button>
+          <div class="subnav-content">
+              <a onclick="art('#a2')">200s</a>
+              <a onclick="art('#a3')">300s</a>
+              <a onclick="art('#a4')">400s</a>
+              <a onclick="art('#a5')">500s</a>
+              <a onclick="art('#ao')">Others</a>
+          </div>
         </div>
-      </div>
-
-      <div class="subnav">
-        <button class="subnavbtn" onclick = "art()">English</button>
-        <div class="subnav-content">
-          <a href="#eg">General</a>
-          <a href="#ee">Electives</a>
+  
+        <div class="subnav">
+          <button class="subnavbtn" onclick = "english()">English</button>
+          <div class="subnav-content">
+            <a onclick="english('#eg')">General</a>
+            <a onclick="english('#ee')">Electives</a>
+          </div>
         </div>
-      </div>
-
-      <div class="subnav">
-        <button class="subnavbtn" onclick = "history()">History</button>
-        <div class="subnav-content">
-            <a href="#h2">200s</a>
-            <a href="#h3">300s</a>
-            <a href="#hus">US History</a>
-            <a href="#h5">500s</a>
-            <a href="#ho">Others</a>
+  
+        <div class="subnav">
+          <button class="subnavbtn" onclick = "history()">History</button>
+          <div class="subnav-content">
+              <a onclick="history('#h2')">200s</a>
+              <a onclick="history('#h3')">300s</a>
+              <a onclick="history('#hus')">US History</a>
+              <a onclick="history('#h5')">500s</a>
+              <a onclick="history('#ho')">Others</a>
+          </div>
         </div>
-      </div>
-
-      <div class="subnav">
-        <button class="subnavbtn" onclick = "language()">Langauge</i></button>
-        <div class="subnav-content">
-          <a href="#lspa">Spanish</a>
-          <a href="#lfre">French</a>
-          <a href="#lman">Chinese</a>
-          <a href="#lger">German</a>
-          <a href="#ljap">Japanese</a>
-          <a href="#lrus">Russian</a>
-          <a href="#lita">Italian</a>
-          <a href="#lara">Arabic</a>
-          <a href="#llat">Latin</a>
-          <a href="#lgre">Classical Greek</a>
+  
+        <div class="subnav">
+          <button class="subnavbtn" onclick = "language()">Langauge</i></button>
+          <div class="subnav-content">
+            <a onclick="language('#lspa')">Spanish</a>
+            <a onclick="language('#lfre')">French</a>
+            <a onclick="language('#lchi')">Chinese</a>
+            <a onclick="language('#lger')">German</a>
+            <a onclick="language('#ljap')">Japanese</a>
+            <a onclick="language('#lrus')">Russian</a>
+            <a onclick="language('#lita')">Italian</a>
+            <a onclick="language('#lara')">Arabic</a>
+            <a onclick="language('#llat')">Latin</a>
+            <a onclick="language('#lgre')">Classical Greek</a>
+          </div>
         </div>
-      </div>
-
-      <div class="subnav">
-        <button class="subnavbtn" onclick = "art()">Math</button>
-        <div class="subnav-content">
-          <a href="#m1">100s</a>
-          <a href="#m2">200s</a>
-          <a href="#m3">300s</a>
-          <a href="#m4">400s</a>
-          <a href="#m5">500s</a>
-          <a href="#me">Electives</a>
+  
+        <div class="subnav">
+          <button class="subnavbtn" onclick = "math()">Math</button>
+          <div class="subnav-content">
+            <a onclick="math('#m1')">100s</a>
+            <a onclick="math('#m2')">200s</a>
+            <a onclick="math('#m3')">300s</a>
+            <a onclick="math('#m4')">400s</a>
+            <a onclick="math('#m5')">500s</a>
+            <a onclick="math('#me')">Electives</a>
+          </div>
         </div>
-      </div>
-
-      <div class="subnav">
-        <button class="subnavbtn" onclick = "religion()">Religion</button>
-        <div class="subnav-content">
-          <a href="#r2">200s</a>
-          <a href="#r3">300s</a>
-          <a href="#r4">400s</a>
-          <a href="#r5">500s</a>
-          <a href="#ro">Others</a>
+  
+        <div class="subnav">
+          <button class="subnavbtn" onclick = "religion()">Religion</button>
+          <div class="subnav-content">
+            <a onclick="religion('#r2')">200s</a>
+            <a onclick="religion('#r3')">300s</a>
+            <a onclick="religion('#r4')">400s</a>
+            <a onclick="religion('#r5')">500s</a>
+            <a onclick="religion('#ro')">Others</a>
+          </div>
         </div>
-      </div>
-
-      <div class="subnav">
-        <button class="subnavbtn" onclick = "science()">Science</button>
-        <div class="subnav-content">
-          <a href="#sbio">Biology</a>
-          <a href="#schem">Chemistry</a>
-          <a href="#sphy">Physics</a>
-          <a href="#scs">CompSci</a>
+  
+        <div class="subnav">
+          <button class="subnavbtn" onclick = "science()">Science</button>
+          <div class="subnav-content">
+            <a onclick="science('#sb')">Biology</a>
+            <a onclick="science('#sc')">Chemistry</a>
+            <a onclick="science('#sp')">Physics</a>
+            <a onclick="science('#scs')">CompSci</a>
+          </div>
         </div>
+  
+        <a href="newpost.html">New Post</a>
+  
       </div>
-
-      <a href="newpost.html">New Post</a>
-
-    </div>
     <!-- Course Info -->
     <!-- I'm not sure how we are going to be able to plug in the actual data here, I'm just putting text as a filler-->
         <h2>
