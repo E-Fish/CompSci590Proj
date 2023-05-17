@@ -121,17 +121,9 @@
 
     <body>
         <!-- Header on top of page -->
-        <div class="headert">
-        <table>
-          <th>
-            <h2>
-              Create a New Post        
-            </h2>
-          </th>
-          <th>
-            <input type="submit" class="button" value="Submit">
-          </th>
-        </table>
+        <h2>
+          Create a New Post        
+        </h2>
         </div>
         <!-- Table and content inside the table -->
         <div>
@@ -177,9 +169,14 @@
                 </th>
                 <th>
                   <label class="labelsf" for="rating">Course Rating:</label>
-                  <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                  </div>
+                  <!-- Adding stars -->
+                  <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+                </div> 
                 </th>
               </table>
               <br>
@@ -217,6 +214,9 @@
                   <label class="labelsf" for="comments">Comments and Review (How did you enjoy the course? Would you recomend it to others?)</label>
                   <textarea rows="10" cols="80" id = "comments" name = "comments"> </textarea>
                   <br>
+                </th>
+                <th>
+                  <input type="submit" class="button" value="Submit">
                 </th>
               </table>
               </table>
