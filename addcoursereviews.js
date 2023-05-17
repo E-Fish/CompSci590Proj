@@ -33,7 +33,7 @@ async function addcoursereviews()
        
         //creates a new review card
         let mycard = document.createElement("div");
-        mycard.setAttribute("class", "courseCard");
+        mycard.setAttribute("class", "postCard");
        
         //creates the <h1> tag for the post title
         let h1 = document.createElement("h1");
