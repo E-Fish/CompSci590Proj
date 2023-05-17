@@ -80,12 +80,15 @@
   background-color: darkred;
   color:white;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  cursor: pointer;
 }
 
+/* Not using navbar b currently */
 .navbar b:hover, .subnav:hover .subnavbtn {
   background-color: darkred;
   color:white;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  cursor: pointer;
 }
 
 /* Style the subnav content - positioned absolute */
@@ -321,7 +324,7 @@ table td:nth-child(1){
   border-collapse: collapse;
 }
 
-/* For tables in newpost */
+/* Not using this anymroe */
 .headert table {
   margin-left: 5%;
   text-align: left;
@@ -332,46 +335,44 @@ table td:nth-child(1){
   border-collapse: collapse;
 }
 
-/* For rating slider */
-.slider {
-  appearance: none;
-  width: 78%;
-  height: 15px;
-  border-radius: 5px;  
-  background: #E0E0E0;
-  outline: none;
-  opacity: 1;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+/* For Star Rating */
+/* https://www.codewithrandom.com/2023/05/04/star-rating-using-html-css/ */
+.rating {
+  width: 225px;
 }
 
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%; 
-  background: gold;
+/* Placing Stars */
+.rating label {
+  /* Stars select left to right */
+  float: right;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: goldrod;
-  cursor: pointer;
+/* Spacing Stars */
+.rating label:not(:first-of-type) {
+  padding-right: 3px;
 }
 
-/* Stars become orange when "checked" */
-.checked {
+/* What happens before stars are checked */
+.rating label:before {
+  /* Code for stars */
+  content: "\2605";
+  /* Star size */
+  font-size: 44px;
+  color: #ccc;
+  line-height: 1;
+}
+
+/* Deleting original clickable ratings */
+.rating input {
+  display: none;
+}
+
+/* Making clicked or hovered stars orange */
+.rating input:checked ~ label:before, .rating:not(:checked) > label:hover:before, .rating:not(:checked) > label:hover ~ label:before {
   color: orange;
-}
-
-/* What does this do? */
-#allCourses {
-  overflow-y: auto;
-  height: 50vh;
 }
 
 /*
@@ -394,22 +395,31 @@ https://www.w3schools.com/howto/howto_css_cards.asp
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
+/* Allowing coursecards to expand when the text becomes too much */
+#allCourses {
+  overflow-y: auto;
+  height: 50vh;
+}
+
 /* Formatting what happens when coursecards are hovered over */
 .courseCard:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   background-color: darkred;
   color: white; /* making text white */
+  cursor: pointer;
   
 }
 
 .courseCard:hover h1 {
   transition: 0.25s;
   color: white; /* making text white */
+  cursor: pointer;
 }
 
 .courseCard:hover h3 {
   transition: 0.25s;
   color: white; /* making text white */
+  cursor: pointer;
 }
 
 .courseCard .rating {
@@ -417,4 +427,5 @@ https://www.w3schools.com/howto/howto_css_cards.asp
   font-size: 24px; /* set the size of the stars */
   margin-top: 10px; /* add some spacing between the title and the stars */
   margin-bottom: 10px;
+  cursor: pointer;
 }
