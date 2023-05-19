@@ -375,21 +375,11 @@ table td:nth-child(1){
 .rating input:checked ~ label:before, .rating:not(:checked) > label:hover:before, .rating:not(:checked) > label:hover ~ label:before {
   color: orange;
 }
-
-/*
-Used this a reference but removed the image tag
-https://www.w3schools.com/howto/howto_css_cards.asp
-*/
-/* Formatting of coursecard on homepage */
-.courseCard {
+.courseCard{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.2s;
-  width: 70%; /* let browser choose the width */
-  margin-left: 15%; /* space outside card to separate cards */
-  margin-right: 15%; /* space outside card to separate cards */
-  margin-top: 30px;
   border: 2px solid darkred; 
-  padding: 2px 16px;  /* spacing inside card around text */
+  padding: 2px 14px;  /* spacing inside card around text */
   border-radius: 25px; /* rounded borders */
   color: darkred;
   text-align: center;
@@ -397,9 +387,11 @@ https://www.w3schools.com/howto/howto_css_cards.asp
 }
 
 /* Allowing coursecards to expand when the text becomes too much */
-#allCourses {
-  overflow-y: auto;
-  height: 50vh;
+#allcourses {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  padding: 75px;
 }
 
 /* Formatting what happens when coursecards are hovered over */
