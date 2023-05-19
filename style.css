@@ -422,10 +422,9 @@ table td:nth-child(1){
   margin-bottom: 10px;
   cursor: pointer;
 }
-
 #allreviews{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 430px 430px 430px;
   grid-gap: 20px;
   padding: 50px;
 }
