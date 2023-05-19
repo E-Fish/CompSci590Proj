@@ -1,11 +1,3 @@
-/*
-Let "searchString" be the text in the search bar
-
-If "searchString" is empty, then show all cards
-Otherwise display all cards that contain "searchString" anywhere in the displayed text for that card
-
-Note that the displayed text includes the course name, title, last review date, and last review user
-*/
 function filtercourses() 
 {
     //Get text from the search bar
@@ -37,7 +29,7 @@ function filtercourses()
             
             //In the HTML, each card sould have 3 children, the <h1>, <p>, and <h3> tags
             let num = card.childNodes.length; 
-            if (num != 3) continue;
+            if (num != 4) continue;
             
             let concatText = ""; //concatenate text from all the children
         
