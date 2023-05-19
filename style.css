@@ -423,12 +423,15 @@ table td:nth-child(1){
   cursor: pointer;
 }
 
+#allreviews{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 50px;
+}
+
 .postCard {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  width: 70%; /* let browser choose the width */
-  margin-left: 15%; /* space outside card to separate cards */
-  margin-right: 15%; /* space outside card to separate cards */
-  margin-top: 30px;
   border: 2px solid darkred; 
   padding: 2px 16px;  /* spacing inside card around text */
   border-radius: 25px; /* rounded borders */
