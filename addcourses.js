@@ -41,8 +41,7 @@ async function addcourses()
         mycard.appendChild(h1);
         mycard.appendChild(p);
         mycard.appendChild(h3);
-        // Comment this out for now, as the filter courses is more imporant than the ratins
-        // mycard.appendChild(rating);
+        mycard.appendChild(rating);
        
         mycard.addEventListener("click", function() { clickedoncourse(index); });
        
