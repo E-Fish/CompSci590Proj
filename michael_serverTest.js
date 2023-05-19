@@ -3,6 +3,7 @@ const { MongoClient } = require("mongodb");
 const uri =
   "mongodb+srv://cSc590:ehHsu3NViHPgLvWX@cluster0.ueyan8p.mongodb.net/test";
 const client = new MongoClient(uri);
+
 async function run() {
   try {
     await client.connect();
@@ -11,14 +12,16 @@ async function run() {
     const coll = db.collection("ratings_reviews");
 
     // insert code goes here
-    const courseSchema = {
-        rating: String,
-        review: String,
-        short_title: String,
-        course_no: String
-    }
+    const docs = [
+      {
+        rating: "5",
+        review: "GReat!",
+        short_title: "SOME ART CLASS",
+        course_no: "ART*200"
+      }
+    ]
 
-    const result = await coll.insertMany(courseSchema);
+    const result = await coll.insertMany(docs);
 
     // display the results of your operation
     console.log(result.insertedIds);
