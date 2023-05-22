@@ -15,9 +15,11 @@
     <!-- Navbar stuff: Same on all tabs -->
     <script> 
       function art(level) { 
-        window.location = "chosencategory.html"; 
+        window.location = "chosencategory.html?Art";
+        document.getElementById("subject").innerHTML="Art";
         if (level==a2){
-          window.location = "chosencategory.html"; 
+          window.location = "chosencategory.html?200 Art"; 
+          document.getElementById("subject").innerHTML="200 Art";
         }
         if (level==a3){
           window.location = "chosencategory.html"; 
@@ -231,13 +233,24 @@
       </div>
 
       <a href="newpost.html">New Post</a>
-
+    
     </div>
-
+    <h6 id="subject"></h6>
+    <h3>
+            <a>Search Course:</a>
+        </h3>
+        <form>
+          <div class="index">
+            <!-- Allowing search bar function -->
+            <input type="text" id="coursesearch" onkeyup="filtercourses()" name="coursesearch" placeholder="Search here.."><br>
+          </div>
+        </form>
       <!--might need to ditch the subnavbar ask brodsky about how i would do that-->
         <!-- Adding the add course and filter course functions/classes -->
         <div id="allcourses"></div>
         <script src="addcourses.js"></script>
+        <script src="filtercourses.js"></script>
         <script src="clickedoncategory.js"></script>
+        <script src="clickedoncourse.js"></script>
     </body>
 </html>
