@@ -202,10 +202,36 @@ h5 {
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
+/* For Course Name in Course Card */
 p{
   color: darkred;
   font-size: 20px;
   text-align:center;
+  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+/* For User in Post Card */
+.user{
+  color: darkred;
+  font-size: 25px;
+  text-align:left;
+  font-weight: bold;
+  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+/* For Body in Post Card */
+.body{
+  color: darkred;
+  font-size: 20px;
+  text-align:left;
+  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+/* For Review in Post Card */
+.review{
+  color: darkred;
+  font-size: 20px;
+  text-align:left;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
@@ -383,7 +409,7 @@ table td:nth-child(1){
   color: orange;
 }
 
-/* ratingb is for coursecards and postcards */
+/* ratingb is for coursecards, postcards, and course */
 .ratingb {
   margin-left: -25px;
   width: 225px;
@@ -479,7 +505,7 @@ table td:nth-child(1){
 .postCard {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border: 2px solid darkred; 
-  padding: 2px 16px;  /* spacing inside card around text */
+  padding: 15px 20px;  /* spacing inside card around text */
   border-radius: 25px; /* rounded borders */
   color: darkred;
   text-align: center;
