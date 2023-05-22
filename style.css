@@ -126,8 +126,8 @@
   border-bottom: 2px solid darkred;
 }
 
-/* For Homepage and Newpost */
-h1 {
+/* For Post Card and Course Card */
+h1{
   color: darkred;
   font-size: 70px;
   text-align:center;
@@ -184,7 +184,7 @@ h3 a {
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-/* For rating in Course page */
+/* For rating, subject, and description in Course page */
 h4 {
   color: darkred;
   font-size: 40px;
@@ -198,6 +198,13 @@ h4 {
 h5 {
   color: darkred;
   font-size: 25px;
+  text-align:center;
+  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+p{
+  color: darkred;
+  font-size: 20px;
   text-align:center;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
@@ -308,7 +315,7 @@ table, td, th {
 }
 
 table {
-  margin-left: 13%;
+  margin-left: 10%;
   text-align: left;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -415,18 +422,18 @@ table td:nth-child(1){
   cursor: pointer;
 }
 
+.courseCard:hover p {
+  transition: 0.25s;
+  color: white; /* making text white */
+  cursor: pointer;
+}
+
 .courseCard .rating {
   color: #ffd700; /* set the color of the stars */
   font-size: 24px; /* set the size of the stars */
   margin-top: 10px; /* add some spacing between the title and the stars */
   margin-bottom: 10px;
   cursor: pointer;
-}
-#allreviews{
-  display: grid;
-  grid-template-columns: 430px 430px 430px;
-  grid-gap: 20px;
-  padding: 50px;
 }
 
 .postCard {
@@ -437,4 +444,11 @@ table td:nth-child(1){
   color: darkred;
   text-align: center;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+#allreviews{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 50px;
 }
