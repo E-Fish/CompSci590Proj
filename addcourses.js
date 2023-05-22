@@ -23,11 +23,6 @@ async function addcourses()
         //This creates the <h1> tag for the course name, e.g. "ANT500"
         let h1 = document.createElement("h1");
         h1.innerText = name;
-        
-        //This creates the rating stars on the page
-        let rating = document.createElement("div");
-        rating.classList.add("rating");
-        rating.innerHTML = '<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>';
        
         //This creates the <p> tag for the course title, e.g. "Cultural Anthropology"
         let p = document.createElement("p");
@@ -38,10 +33,14 @@ async function addcourses()
         let h3 = document.createElement("h3");
         h3.innerText = "Last review:" + " lionrampant" + cnt.toString() + "  (2023-05-11)";
 
+        //This creates the rating stars on the page
+        let Rating = document.createElement("ratingb");
+        Rating.innerHTML = '<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label> <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label> <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label> <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label> <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>'
+
         mycard.appendChild(h1);
         mycard.appendChild(p);
         mycard.appendChild(h3);
-        mycard.appendChild(rating);
+        mycard.appendChild(Rating);
        
         mycard.addEventListener("click", function() { clickedoncourse(index); });
        
