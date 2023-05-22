@@ -35,21 +35,21 @@ async function addcoursereviews()
         let mycard = document.createElement("div");
         mycard.setAttribute("class", "postCard");
        
-        //creates the <h1> tag for the post title
-        let h1 = document.createElement("h1");
-        h1.innerText = title;
+        //creates the <h1> tag for the User and Date
+        let UserDate = document.createElement("h1");
+        UserDate.innerText = user + " ( " + date + " )";
        
         //creates the <p> tag for the post body
-        let p = document.createElement("p");
-        p.innerText = body;
-       
+        let Title = document.createElement("p");
+        Title.innerText = title;
+    
         //creates the <h3> tag for the reviewer name and date
-        let h3 = document.createElement("h3");
-        h3.innerText = user + " ( " + date + " )";
+        let Review = document.createElement("h3");
+        Review.innerText = body;
 
-        mycard.appendChild(h1);
-        mycard.appendChild(p);
-        mycard.appendChild(h3);
+        mycard.appendChild(UserDate);
+        mycard.appendChild(Title);
+        mycard.appendChild(Review);
         divTag.appendChild(mycard);
     }
 } //End addCourseReviews
