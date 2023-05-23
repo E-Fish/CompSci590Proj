@@ -235,8 +235,6 @@ p{
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-
-
 /* For Review in Post Card */
 .review{
   color: darkred;
@@ -405,7 +403,7 @@ table td:nth-child(1){
   content: "\2605";
   /* Star size */
   font-size: 35px;
-  color: #ccc;
+  color: darkred;
   line-height: 1;
 }
 
@@ -530,7 +528,7 @@ table td:nth-child(1){
 }
 
 .checked {
-  color:gold;
+  color:orange;
 }
 
 .unchecked {
