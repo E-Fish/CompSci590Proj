@@ -1,1 +1,59 @@
-
+/* For labels on newPost and Course pages */
+.labelsf {
+    color: darkred;
+    font-size: 20px;
+    text-align:center;
+    margin: 30px 0;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For search bar on home and some input queries on newPost */
+  input[type=text] {
+    width: 400pxpx;
+    padding: 12px 20px;
+    margin-left: 0%;
+    margin: 8 auto;
+    display: block;
+    box-sizing: border-box;
+    transition: width 0.4s ease-in-out;
+    border: 1px solid grey;
+    border-radius: 8px;
+  }
+  
+  input[type=text]:focus {
+    border: 1.5px solid #555;
+    outline: none;
+  }
+  
+  /* For certain inputs on the newPost page */
+  .ids input[type=text] {
+    width: 300px;
+    padding: 12px 20px;
+    margin-left: 0%;
+    margin: 8 auto;
+    display: block;
+    box-sizing: border-box;
+    transition: width 0.4s ease-in-out;
+    border: 1px solid grey;
+    border-radius: 8px;
+  }
+  
+  .ids input[type=text]:focus {
+    border: 1.5px solid #555;
+    outline: none;
+  }
+  
+  /* To make datalist search bars look good */
+  .datalist input {
+    width: 300px;
+    padding: 12px 20px;
+    margin-left: 0%;
+    margin: 8 auto;
+    display: block;
+    box-sizing: border-box;
+    transition: width 0.4s ease-in-out;
+    border: 1px solid grey;
+    border-radius: 8px;
+    outline: none;
+  }
+  
