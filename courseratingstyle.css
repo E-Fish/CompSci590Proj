@@ -1,264 +1,233 @@
 /* For Post Card and Course Card */
 h1{
-  color: darkred;
-  font-size: 70px;
-  text-align:center;
-  margin-bottom: 30px;
-  margin-top: 40px;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* This is for the RATEPea page header*/
-h6 {
-  color: darkred;
-  font-size: 70px;
-  text-size-adjust: 30x;
-  text-align:center;
-  margin-bottom: 30px;
-  margin-top: 40px;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* For Course and newPost course headers */
-h2 {
-  color: darkred;
-  font-size: 70px;
-  text-align:left;
-  margin-top: 40px;
-  margin-left: 70px;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* For search bar on Homepage */
-h3 {
-  color: darkred;
-  font-size: 20px;
-  text-align:center;
-  margin: 10px 0;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-h3 a {
-  color: darkred;
-  font-size: 20px;
-  text-align:center;
-  margin: 10px 0;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* For rating, subject, and description in Course page */
-h4 {
-  color: darkred;
-  font-size: 40px;
-  text-align:left;
-  margin-top: -40px;
-  margin-left: 100px;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* For elements of Course Table */
-h5 {
-  color: darkred;
-  font-size: 25px;
-  text-align:center;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* For Course Name in Course Card */
-p{
-  color: darkred;
-  font-size: 20px;
-  text-align:center;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* For User in Post Card */
-.user{
-  color: darkred;
-  font-size: 30px;
-  text-align:left;
-  font-weight: 700;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* For Term and Teacher in Post Card */
-.termandteacher{
-  color: darkred;
-  font-size: 25px;
-  text-align:left;
-  font-weight: 600;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-.body{
-  color: darkred;
-  font-size: 20px;
-  text-align:left;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* For Review in Post Card */
-.review{
-  color: darkred;
-  font-size: 20px;
-  text-align:left;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* For Star Rating */
-/* https://www.codewithrandom.com/2023/05/04/star-rating-using-html-css/ */
-.rating {
-  margin-left: -25px;
-  width: 225px;
-}
-
-/* Placing Stars */
-.rating label {
-  /* Stars select left to right */
-  float: right;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
-/* Spacing Stars */
-.rating label:not(:first-of-type) {
-  padding-right: 0px;
-}
-
-/* What happens before stars are checked */
-.rating label:before {
-  /* Code for stars */
-  content: "\2605";
-  /* Star size */
-  font-size: 35px;
-  color: darkred;
-  line-height: 1;
-}
-
-/* Deleting original clickable ratings */
-.rating input {
-  display: none;
-}
-
-/* Making clicked or hovered stars orange */
-.rating input:checked ~ label:before, .rating:not(:checked) > label:hover:before, .rating:not(:checked) > label:hover ~ label:before {
-  color: orange;
-}
-
-/* ratingb is for coursecards, postcards, and course */
-.ratingb {
-  margin-left: -25px;
-  width: 225px;
-}
-
-/* Placing Stars */
-.ratingb label {
-  /* Stars select left to right */
-  float: right;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
-/* Spacing Stars */
-.ratingb label:not(:first-of-type) {
-  padding-right: 0px;
-}
-
-.ratingb label:before {
-  /* Code for stars */
-  content: "\2605";
-  /* Star size */
-  font-size: 35px;
-  color: #ccc;
-  line-height: 1;
-}
-
-/* Deleting original clickable ratings */
-.ratingb input {
-  display: none;
-}
-
-/* Making clicked stars orange */
-.ratingb input:checked ~ label:before {
-  color: orange;
-}
-.courseCard{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.2s;
-  border: 2px solid darkred; 
-  padding: 2px 14px;  /* spacing inside card around text */
-  border-radius: 25px; /* rounded borders */
-  color: darkred;
-  text-align: center;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-/* Allowing coursecards to expand when the text becomes too much */
-#allcourses {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 20px;
-  padding: 75px;
-}
-
-/* Formatting what happens when coursecards are hovered over */
-.courseCard:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  background-color: darkred;
-  color: white; /* making text white */
-  cursor: pointer;
+    color: darkred;
+    font-size: 70px;
+    text-align:center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
   
-}
+  /* This is for the RATEPea page header*/
+  h6 {
+    color: darkred;
+    font-size: 70px;
+    text-size-adjust: 30x;
+    text-align:center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For Course and newPost course headers */
+  h2 {
+    color: darkred;
+    font-size: 70px;
+    text-align:left;
+    margin-top: 40px;
+    margin-left: 70px;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For search bar on Homepage */
+  h3 {
+    color: darkred;
+    font-size: 20px;
+    text-align:center;
+    margin: 10px 0;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  h3 a {
+    color: darkred;
+    font-size: 20px;
+    text-align:center;
+    margin: 10px 0;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For rating, subject, and description in Course page */
+  h4 {
+    color: darkred;
+    font-size: 40px;
+    text-align:left;
+    margin-top: -40px;
+    margin-left: 100px;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For elements of Course Table */
+  h5 {
+    color: darkred;
+    font-size: 25px;
+    text-align:center;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For Course Name in Course Card */
+  p{
+    color: darkred;
+    font-size: 20px;
+    text-align:center;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For User in Post Card */
+  .user{
+    color: darkred;
+    font-size: 30px;
+    text-align:left;
+    font-weight: 700;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For Term and Teacher in Post Card */
+  .termandteacher{
+    color: darkred;
+    font-size: 25px;
+    text-align:left;
+    font-weight: 600;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  .body{
+    color: darkred;
+    font-size: 20px;
+    text-align:left;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For Review in Post Card */
+  .review{
+    color: darkred;
+    font-size: 20px;
+    text-align:left;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
 
-.courseCard:hover h1 {
-  transition: 0.25s;
-  color: white; /* making text white */
-  cursor: pointer;
-}
+  .date{
+    color: darkred;
+    font-size: 15px;
+    text-align:left;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For Star Rating */
+  /* https://www.codewithrandom.com/2023/05/04/star-rating-using-html-css/ */
+  .rating {
+    margin-left: -25px;
+    width: 225px;
+  }
+  
+  /* Placing Stars */
+  .rating label {
+    /* Stars select left to right */
+    float: right;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  /* Spacing Stars */
+  .rating label:not(:first-of-type) {
+    padding-right: 0px;
+  }
+  
+  /* What happens before stars are checked */
+  .rating label:before {
+    /* Code for stars */
+    content: "\2605";
+    /* Star size */
+    font-size: 35px;
+    color: darkred;
+    line-height: 1;
+  }
+  
+  /* Deleting original clickable ratings */
+  .rating input {
+    display: none;
+  }
+  
+  /* Making clicked or hovered stars orange */
+  .rating input:checked ~ label:before, .rating:not(:checked) > label:hover:before, .rating:not(:checked) > label:hover ~ label:before {
+    color: orange;
+  }
 
-.courseCard:hover h3 {
-  transition: 0.25s;
-  color: white; /* making text white */
-  cursor: pointer;
-}
-
-.courseCard:hover p {
-  transition: 0.25s;
-  color: white; /* making text white */
-  cursor: pointer;
-}
-
-.courseCard .rating {
-  color: #ffd700; /* set the color of the stars */
-  font-size: 24px; /* set the size of the stars */
-  margin-top: 10px; /* add some spacing between the title and the stars */
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.postCard {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border: 2px solid darkred; 
-  padding: 15px 20px;  /* spacing inside card around text */
-  border-radius: 25px; /* rounded borders */
-  color: darkred;
-  text-align: center;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-#allreviews {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
-  padding: 50px;
-}
-
-.checked {
-  color:orange;
-}
-
-.unchecked {
-  color: darkred;
-}
+  .courseCard{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.2s;
+    border: 2px solid darkred; 
+    padding: 2px 14px;  /* spacing inside card around text */
+    border-radius: 25px; /* rounded borders */
+    color: darkred;
+    text-align: center;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* Allowing coursecards to expand when the text becomes too much */
+  #allcourses {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    padding: 75px;
+  }
+  
+  /* Formatting what happens when coursecards are hovered over */
+  .courseCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: darkred;
+    color: white; /* making text white */
+    cursor: pointer;
+    
+  }
+  
+  .courseCard:hover h1 {
+    transition: 0.25s;
+    color: white; /* making text white */
+    cursor: pointer;
+  }
+  
+  .courseCard:hover h3 {
+    transition: 0.25s;
+    color: white; /* making text white */
+    cursor: pointer;
+  }
+  
+  .courseCard:hover p {
+    transition: 0.25s;
+    color: white; /* making text white */
+    cursor: pointer;
+  }
+  
+  .courseCard .rating {
+    color: #ffd700; /* set the color of the stars */
+    font-size: 24px; /* set the size of the stars */
+    margin-top: 10px; /* add some spacing between the title and the stars */
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .postCard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 2px solid darkred; 
+    padding: 15px 20px;  /* spacing inside card around text */
+    border-radius: 25px; /* rounded borders */
+    color: darkred;
+    text-align: center;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  #allreviews {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 50px;
+  }
+  
+  .checked {
+    color:orange;
+  }
+  
+  .unchecked {
+    color: darkred;
+  }
