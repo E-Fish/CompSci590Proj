@@ -28,20 +28,20 @@ async function addcoursereviews()
         
         //Not using title because that's not an option in post
         let user = posts[i].user; //username
-        let date = posts[i].date; //post date
         let term = posts[i].term; //term
         let teacher = posts[i].indexTeacher; //teacher (filler because we need teacher and teacher review elements)
         let body = posts[i].body; //post body
         let rating = posts[i].rating; //rating
+        let date = posts[i].date; //post date
        
         //creates a new review card
         let mycard = document.createElement("div");
         mycard.setAttribute("class", "postCard");
        
         //creates the "UserDate" tag that has the user and the date
-        let UserDate = document.createElement("div");
-        UserDate.setAttribute("class", "user")
-        UserDate.innerText = user + " ( " + date + " )";
+        let User = document.createElement("div");
+        User.setAttribute("class", "user")
+        User.innerText = user;
 
         //creates the "Term" tag that has the term taken
         let Term = document.createElement("div");
@@ -58,22 +58,31 @@ async function addcoursereviews()
         Review.setAttribute("class", "body")
         Review.innerText = body;
 
+        let Date = document.createElement("div");
+        Date.setAttribute("class", "date")
+        Date.innerText = "Date posted: " + date;
+
         //adding rating to postCard using a string "starString" (Doesn't work for now)
-        // let starString = "";
+        let Stars = document.createElement("div");
 
-        // for (let i = 0; i < rating; i++) {
-        //     starString += "<i class = 'fa fa-star checked'></i>"
-        // }
+        let starString = "";
 
-        // for (let i = rating; i<5; i++) {
-        //     starString += "<i class = 'fa fa-star unchecked'></i>"
-        // }
+        for (let i = 0; i < rating; i++) {
+            starString += "<i class = 'fa fa-star checked' style='font-size:30px'></i>"
+        }
 
-        mycard.appendChild(UserDate);
+        for (let i = rating; i<5; i++) {
+            starString += "<i class = 'fa fa-star unchecked' style='font-size:30px'></i>"
+        }
+
+        Stars.innerHTML = starString;
+        
+        mycard.appendChild(Stars);
+        mycard.appendChild(User);
         mycard.appendChild(Term);
         mycard.appendChild(Teacher);
-        mycard.appendChild(Review);
-        // mycard.appendChild(starString);
+        mycard.appendChild(Review);  
+        mycard.appendChild(Date);      
         divTag.appendChild(mycard);
 
     }
