@@ -2,9 +2,7 @@
 <html>
     <!-- Setting CSS and Title -->
     <head>
-        <link rel="stylesheet" href="indexstyle.css" >
-        <link rel="stylesheet" href="courseratingstyle.css" >
-        <link rel="stylesheet" type="text/css" href="courseratingstyle.css" >
+        <link rel="stylesheet" href="style.css" >
         <title>
             Rate PEA 
         </title>
@@ -14,147 +12,14 @@
 
     <!-- Adding the courses to the page -->
     <body onload="addcourses()"> 
-      <script> 
-        function art(level) { 
-          window.location = "chosencategory.html"; 
-          if (level==a2){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==a3){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==a4){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==a5){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==ao){
-            window.location = "chosencategory.html"; 
-          }
-        }
-        function english() { 
-          window.location = "chosencategory.html"; 
-          if (level==eg){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==ee){
-            window.location = "chosencategory.html"; 
-          }
-        }
-        function history() { 
-          window.location = "chosencategory.html"; 
-          if (level==h2){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==h3){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==hus){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==h5){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==ho){
-            window.location = "chosencategory.html"; 
-          }
-        }
-        function language() { 
-          window.location = "chosencategory.html"; 
-          if (level==lsps){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==lfre){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==lchi){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==lger){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==ljap){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==lrus){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==lita){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==lara){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==llat){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==lgre){
-            window.location = "chosencategory.html"; 
-          }
-        }
-        function math() { 
-          window.location = "chosencategory.html"; 
-          if (level==m1){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==m2){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==m3){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==m4){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==m5){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==me){
-            window.location = "chosencategory.html"; 
-          }
-        }
-        function religion() { 
-          window.location = "chosencategory.html"; 
-          if (level==r2){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==r3){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==r4){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==r5){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==ro){
-            window.location = "chosencategory.html"; 
-          }
-        }
-        function science() { 
-          window.location = "chosencategory.html"; 
-          if (level==sb){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==sc){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==sp){
-            window.location = "chosencategory.html"; 
-          }
-          if (level==scs){
-            window.location = "chosencategory.html"; 
-          }
-        }
-     </script>
+
     <!-- Navbar stuff: Same on all tabs -->
     <div class="navbar">
         <a class = "active" href="index.html">RatePEA</a>
         
-       //EDITED DROPDOWN NAV CODE WITH NEW FILTERSUBJECT FUNCTION - need to edit the rest of the dropdown accordingly
+       <!--EDITED DROPDOWN NAV CODE WITH NEW FILTERSUBJECT FUNCTION - need to edit the rest of the dropdown accordingly-->
        <div class="subnav">
-          <button class="subnavbtn">Arts</button>
+          <button class="subnavbtn" >Arts</button>
           <div class="subnav-content">
               <a onclick="filtersubject('ART')">Art</a>
               <a onclick="filtersubject('DAN')">Dance</a>
@@ -164,70 +29,73 @@
         </div>
   
         <div class="subnav">
-          <button class="subnavbtn" onclick = "english()">English</button>
+          <button class="subnavbtn">English</button>
           <div class="subnav-content">
-            <a onclick="english('#eg')">General</a>
-            <a onclick="english('#ee')">Electives</a>
+            <a onclick="filtersubject('ENG1')">100s</a>
+            <a onclick="filtersubject('ENG2')">200s</a>
+            <a onclick="filtersubject('ENG3')">300s</a>
+            <a onclick="filtersubject('ENG4')">400s</a>
+            <a onclick="filtersubject('ENG5')">Electives</a>
           </div>
         </div>
   
         <div class="subnav">
-          <button class="subnavbtn" onclick = "history()">History</button>
+          <button class="subnavbtn">History</button>
           <div class="subnav-content">
-              <a onclick="history('#h2')">200s</a>
-              <a onclick="history('#h3')">300s</a>
-              <a onclick="history('#hus')">US History</a>
-              <a onclick="history('#h5')">500s</a>
-              <a onclick="history('#ho')">Others</a>
+              <a onclick="filtersubject('HIS2')">200s</a>
+              <a onclick="filtersubject('HIS3')">300s</a>
+              <a onclick="filtersubject('HIS4')">US History</a>
+              <a onclick="filtersubject('HIS5')">500s</a>
+              <a onclick="filtersubject('HIS6')">Others</a>
           </div>
         </div>
   
         <div class="subnav">
-          <button class="subnavbtn" onclick = "language()">Langauge</i></button>
+          <button class="subnavbtn">Langauge</i></button>
           <div class="subnav-content">
-            <a onclick="language('#lspa')">Spanish</a>
-            <a onclick="language('#lfre')">French</a>
-            <a onclick="language('#lchi')">Chinese</a>
-            <a onclick="language('#lger')">German</a>
-            <a onclick="language('#ljap')">Japanese</a>
-            <a onclick="language('#lrus')">Russian</a>
-            <a onclick="language('#lita')">Italian</a>
-            <a onclick="language('#lara')">Arabic</a>
-            <a onclick="language('#llat')">Latin</a>
-            <a onclick="language('#lgre')">Classical Greek</a>
+            <a onclick="filtersubject('SPA')">Spanish</a>
+            <a onclick="filtersubject('FRE')">French</a>
+            <a onclick="filtersubject('CHI')">Chinese</a>
+            <a onclick="filtersubject('GER')">German</a>
+            <a onclick="filtersubject('JAP')">Japanese</a>
+            <a onclick="filtersubject('RUS')">Russian</a>
+            <a onclick="filtersubject('ITA')">Italian</a>
+            <a onclick="filtersubject('ARA')">Arabic</a>
+            <a onclick="filtersubject('LAT')">Latin</a>
+            <a onclick="filtersubject('GRE')">Classical Greek</a>
           </div>
         </div>
   
         <div class="subnav">
-          <button class="subnavbtn" onclick = "math()">Math</button>
+          <button class="subnavbtn">Math</button>
           <div class="subnav-content">
-            <a onclick="math('#m1')">100s</a>
-            <a onclick="math('#m2')">200s</a>
-            <a onclick="math('#m3')">300s</a>
-            <a onclick="math('#m4')">400s</a>
-            <a onclick="math('#m5')">500s</a>
-            <a onclick="math('#me')">Electives</a>
+            <a onclick="filtersubject('MAT1')">100s</a>
+            <a onclick="filtersubject('MAT2')">200s</a>
+            <a onclick="filtersubject('MAT3')">300s</a>
+            <a onclick="filtersubject('MAT4')">400s</a>
+            <a onclick="filtersubject('MAT5')">500s</a>
+            <a onclick="filtersubject('MAT6')">Electives</a>
           </div>
         </div>
   
         <div class="subnav">
-          <button class="subnavbtn" onclick = "religion()">Religion</button>
+          <button class="subnavbtn">Religion</button>
           <div class="subnav-content">
-            <a onclick="religion('#r2')">200s</a>
-            <a onclick="religion('#r3')">300s</a>
-            <a onclick="religion('#r4')">400s</a>
-            <a onclick="religion('#r5')">500s</a>
-            <a onclick="religion('#ro')">Others</a>
+            <a onclick="filtersubject('REL2')">200s</a>
+            <a onclick="filtersubject('REL3')">300s</a>
+            <a onclick="filtersubject('REL4')">400s</a>
+            <a onclick="filtersubject('REL5')">500s</a>
+            <a onclick="filtersubject('REL6')">Others</a>
           </div>
         </div>
   
         <div class="subnav">
-          <button class="subnavbtn" onclick = "science()">Science</button>
+          <button class="subnavbtn">Science</button>
           <div class="subnav-content">
-            <a onclick="science('#sb')">Biology</a>
-            <a onclick="science('#sc')">Chemistry</a>
-            <a onclick="science('#sp')">Physics</a>
-            <a onclick="science('#scs')">CompSci</a>
+            <a onclick="filtersubject('BIO')">Biology</a>
+            <a onclick="filtersubject('CHE')">Chemistry</a>
+            <a onclick="filtersubject('PHY')">Physics</a>
+            <a onclick="filtersubject('CSC')">CompSci</a>
           </div>
         </div>
   
