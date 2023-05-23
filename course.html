@@ -3,15 +3,15 @@
     <!-- Setting CSS and title -->
     <head>
         <link rel="stylesheet" href="style.css" >
-            <title>
-                Course
-            </title>
-            <!-- Stylesheet to make stars -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <style>          
-            </style>
+        <!-- Stylesheet to make stars -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <title>
+              Course
+          </title>                
     </head>
+
     <body onload="addcoursereviews()">
+
     <!-- Navbar stuff: Basically same on all tabs -->
     <script> 
       function art() { 
@@ -36,6 +36,7 @@
         window.location = "chosencategory.html"; 
       }
    </script>
+
   <!-- Navbar stuff: Same on all tabs -->
   <div class="navbar">
       <a class = "active" href="index.html">RatePEA</a>
@@ -128,19 +129,14 @@
           Course Number: Coursename
         </h2>
         <h4>
-          Rating:
-          <div class="ratingb">
-            <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
-            <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
-            <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
-            <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
-            <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
-          </div>          
+          Rating: <!-- Two stars to prove the fa stars work -->
+          <i class = 'fa fa-star checked' style="font-size:40px"></i> <i class = 'fa fa-star checked' style="font-size:40px"></i>
           <br>
           Subject: xxx
           <br>
           Description: xxx
         </h4>
+
     <div id="allreviews"></div>
     <!-- Adding course reviews to course page -->
     <script src="addcoursereviews.js"></script>
