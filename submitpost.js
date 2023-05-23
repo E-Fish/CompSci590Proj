@@ -14,11 +14,11 @@ mongoose.connect('mongodb+srv://cSc590:ehHsu3NViHPgLvWX@cluster0.ueyan8p.mongodb
 const courseSchema = {
     username: String,
     course_no: String,
-    subj: String,
     term: String,
     rating: String,
     teacher: String,
-    //comment: String,
+    teachercomments: String,
+    coursecomments: String,
 }
 
 const course = mongoose.model('ratings_reviews', courseSchema);
@@ -31,10 +31,11 @@ app.post("/", function(req, res) {
     let newCourse = new course ({
         username: req.body.username,
         course_no: req.body.coursecode,
-        subj: req.body.term,
+        term: req.body.term,
         rating: req.body.rating,
         teacher: req.body.teachername,
-       //comment: req.body.comments,
+        teachercomments: req.body.teachercomments,
+       coursecomments: req.body.coursecomments,
 
    })
    newCourse.save();
