@@ -25,42 +25,55 @@ async function addcoursereviews()
     for (let i in posts) {
         let index = posts[i].indexCourse; //course index
         if (index != selected) continue;
-       
+        
+        //Not using title because that's not an option in post
         let user = posts[i].user; //username
-        let title = posts[i].title; //post title
-        let body = posts[i].body; //post body
         let date = posts[i].date; //post date
+        let term = posts[i].term; //term
+        let teacher = posts[i].indexTeacher; //teacher (filler because we need teacher and teacher review elements)
+        let body = posts[i].body; //post body
         let rating = posts[i].rating; //rating
        
         //creates a new review card
         let mycard = document.createElement("div");
         mycard.setAttribute("class", "postCard");
        
-        //creates the <h1> tag for the User and Date
+        //creates the "UserDate" tag that has the user and the date
         let UserDate = document.createElement("div");
         UserDate.setAttribute("class", "user")
         UserDate.innerText = user + " ( " + date + " )";
+
+        //creates the "Term" tag that has the term taken
+        let Term = document.createElement("div");
+        Term.setAttribute("class", "termandteacher")
+        Term.innerText = "Term Taken: " + term; 
        
-        //creates the <p> tag for the post body
-        let Title = document.createElement("div");
-        Title.setAttribute("class", "body")
-        Title.innerText = title;
+        //creates the "Teacher" tag that has the teacher
+        let Teacher = document.createElement("div");
+        Teacher.setAttribute("class", "termandteacher")
+        Teacher.innerText = "Teacher: " + teacher;
     
-        //creates the <h3> tag for the reviewer name and date
+        //creates the "Review" tag that has the main review
         let Review = document.createElement("div");
-        Review.setAttribute("class", "review")
+        Review.setAttribute("class", "body")
         Review.innerText = body;
 
-        //adding rating to postCard
-        let Rating = document.createElement("div");
-        Rating.setAttribute("class", "ratingc");
-        Rating.innerHTML = '<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label> <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label> <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label> <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label> <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>'
+        //adding rating to postCard using a string "starString" (Doesn't work for now)
+        // let starString = "";
 
+        // for (let i = 0; i < rating; i++) {
+        //     starString += "<i class = 'fa fa-star checked'></i>"
+        // }
+
+        // for (let i = rating; i<5; i++) {
+        //     starString += "<i class = 'fa fa-star unchecked'></i>"
+        // }
 
         mycard.appendChild(UserDate);
-        mycard.appendChild(Title);
+        mycard.appendChild(Term);
+        mycard.appendChild(Teacher);
         mycard.appendChild(Review);
-        mycard.appendChild(Rating);
+        // mycard.appendChild(starString);
         divTag.appendChild(mycard);
 
     }
