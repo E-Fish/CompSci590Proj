@@ -150,14 +150,14 @@
     <div class="navbar">
         <a class = "active" href="index.html">RatePEA</a>
         
-        <div class="subnav">
-          <button class="subnavbtn" onclick = "art()">Art</button>
+       //EDITED DROPDOWN NAV CODE WITH NEW FILTERSUBJECT FUNCTION - need to edit the rest of the dropdown accordingly
+       <div class="subnav">
+          <button class="subnavbtn">Arts</button>
           <div class="subnav-content">
-              <a onclick="art('#a2')">200s</a>
-              <a onclick="art('#a3')">300s</a>
-              <a onclick="art('#a4')">400s</a>
-              <a onclick="art('#a5')">500s</a>
-              <a onclick="art('#ao')">Others</a>
+              <a onclick="filtersubject('ART')">Art</a>
+              <a onclick="filtersubject('DAN')">Dance</a>
+              <a onclick="filtersubject('MUS')">Music</a>
+              <a onclick="filtersubject('THR')">Theatre</a>
           </div>
         </div>
   
