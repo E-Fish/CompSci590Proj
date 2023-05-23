@@ -28,7 +28,7 @@
         <!-- Table and content inside the table -->
         <div>
             <!-- Declaring form -->
-            <form action="/http://localhost:4000/" method = "post">
+            <form action="/http://localhost:4000/" method="post">
               <!-- Creating table 1 (Username)-->
               <table>
                  <th>
@@ -51,7 +51,7 @@
                   <br>
                   <label class="labelsf" for="term">Term you took the course:</label>               
                   <div class = "datalist">
-                    <input list = "term" placeholder="Search for Term">
+                    <input list = "term" name="term" placeholder="Search for Term">
                     <!-- Datalist allows for seach and select -->
                     <datalist id="term">
                       <option value="Fall2020"></option>
@@ -86,7 +86,7 @@
                   <br>
                   <label class="labelsf" for="teachername">Teacher's Name:</label>
                   <div class = "datalist">
-                    <input list = "teacher" placeholder="Search for Your Teacher!">
+                    <input list = "teacher" name="teachername" placeholder="Search for Your Teacher!">
                     <datalist id="teacher">
                       <option value="TeacherA"></option>
                       <option value="TeacherB"></option>
@@ -103,7 +103,7 @@
                 </th>
                 <th>
                   <label class="labelsf" for="teacherComments">Tell me about your Teacher. What dorm are they in? <br> Did they use reserve? What is their teaching style?<br></label>             
-                  <textarea rows="3" cols="50" id = "comments" name = "comments"> </textarea>
+                  <textarea rows="3" cols="50" id = "comments" name = "teachercomments"> </textarea>
                 </th>
               </table>
               <br>
@@ -112,7 +112,7 @@
                 <th>
                   <br>
                   <label class="labelsf" for="comments">Comments and Review (How did you enjoy the course? Would you recomend it to others?)</label>
-                  <textarea rows="10" cols="80" id = "comments" name = "comments"> </textarea>
+                  <textarea rows="10" cols="80" id = "comments" name ="coursecomments"> </textarea>
                   <br>
                 </th>
                 <th>
