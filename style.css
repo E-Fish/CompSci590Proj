@@ -213,19 +213,29 @@ p{
 /* For User in Post Card */
 .user{
   color: darkred;
-  font-size: 25px;
+  font-size: 30px;
   text-align:left;
-  font-weight: bold;
+  font-weight: 700;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-/* For Body in Post Card */
+/* For Term and Teacher in Post Card */
+.termandteacher{
+  color: darkred;
+  font-size: 25px;
+  text-align:left;
+  font-weight: 600;
+  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
 .body{
   color: darkred;
   font-size: 20px;
   text-align:left;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
+
+
 
 /* For Review in Post Card */
 .review{
@@ -512,9 +522,17 @@ table td:nth-child(1){
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-#allreviews{
+#allreviews {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
   padding: 50px;
+}
+
+.checked {
+  color:gold;
+}
+
+.unchecked {
+  color: darkred;
 }
