@@ -17,12 +17,14 @@ async function addcoursereviews()
     //Get the divTag
     let divTag = document.getElementById("allreviews");
    
+    //What does this do?
     while (divTag.hasChildNodes()) {
         divTag.removeChild(divTag.firstChild);
     }
    
     //Loop through all courses
     for (let i in posts) {
+        //Grabs code from only the one course
         let index = posts[i].indexCourse; //course index
         if (index != selected) continue;
         
@@ -58,23 +60,20 @@ async function addcoursereviews()
         Review.setAttribute("class", "body")
         Review.innerText = body;
 
+        //creates the "Date" tag that has the date
         let Date = document.createElement("div");
         Date.setAttribute("class", "date")
         Date.innerText = "Date posted: " + date;
 
-        //adding rating to postCard using a string "starString" (Doesn't work for now)
+        //adding rating to postCard using a string "starString"
         let Stars = document.createElement("div");
-
         let starString = "";
-
         for (let i = 0; i < rating; i++) {
             starString += "<i class = 'fa fa-star checked' style='font-size:30px'></i>"
         }
-
         for (let i = rating; i<5; i++) {
             starString += "<i class = 'fa fa-star unchecked' style='font-size:30px'></i>"
         }
-
         Stars.innerHTML = starString;
         
         mycard.appendChild(Stars);
@@ -84,6 +83,5 @@ async function addcoursereviews()
         mycard.appendChild(Review);  
         mycard.appendChild(Date);      
         divTag.appendChild(mycard);
-
     }
 } //End addCourseReviews
