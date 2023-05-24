@@ -15,6 +15,10 @@ async function addcourses()
         let index = courses[i].indexCourse; //The course index
         let name = courses[i].name; //The class name
         let title = courses[i].title; //The class title
+        // Will use line below eventually
+        // let rating = courses[i].rating;
+        // For now just 3 stars
+        let rating = 3;
        
         //This creates a new course card
         let mycard = document.createElement("div");
@@ -33,14 +37,21 @@ async function addcourses()
         let h3 = document.createElement("h3");
         h3.innerText = "Last review:" + " lionrampant" + cnt.toString() + "  (2023-05-11)";
 
-        //This creates the rating stars on the page
-        let Rating = document.createElement("ratingb");
-        Rating.innerHTML = '<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label> <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label> <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label> <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label> <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>'
-
+        //adding rating to postCard using a string "starString"
+        let Stars = document.createElement("div");
+        let starString = "";
+        for (let i = 0; i < rating; i++) {
+            starString += "<i class = 'fa fa-star checked' style='font-size:30px'></i>"
+        }
+        for (let i = rating; i<5; i++) {
+            starString += "<i class = 'fa fa-star unchecked' style='font-size:30px'></i>"
+        }
+        Stars.innerHTML = starString;
+        
         mycard.appendChild(h1);
         mycard.appendChild(p);
         mycard.appendChild(h3);
-        mycard.appendChild(Rating);
+        mycard.appendChild(Stars);
        
         mycard.addEventListener("click", function() { clickedoncourse(index); });
        
