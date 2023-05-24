@@ -175,6 +175,7 @@ span {
   
   .index input[type=text]:focus {
     width: 43%;
+    outline: none;
   }
   
   /* For Tables */
