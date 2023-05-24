@@ -56,4 +56,45 @@
     border-radius: 8px;
     outline: none;
   }
+
+  /* For Star Rating in newPost */
+  /* https://www.codewithrandom.com/2023/05/04/star-rating-using-html-css/ */
+  .rating {
+    margin-left: -25px;
+    width: 225px;
+  }
+  
+  /* Placing Stars */
+  .rating label {
+    /* Stars select left to right */
+    float: right;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  /* Spacing Stars */
+  .rating label:not(:first-of-type) {
+    padding-right: 0px;
+  }
+  
+  /* What happens before stars are checked */
+  .rating label:before {
+    /* Code for stars */
+    content: "\2605";
+    /* Star size */
+    font-size: 35px;
+    color: darkgrey;
+    line-height: 1;
+  }
+  
+  /* Deleting original clickable ratings */
+  .rating input {
+    display: none;
+  }
+  
+  /* Making clicked or hovered stars orange */
+  .rating input:checked ~ label:before, .rating:not(:checked) > label:hover:before, .rating:not(:checked) > label:hover ~ label:before {
+    color: orange;
+  }
   
