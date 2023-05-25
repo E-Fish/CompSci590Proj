@@ -129,11 +129,11 @@ h1{
     padding: 50px;
   }
   
-  /* For any FA star */
-  .checked {
-    color:orange;
-  }
-  
-  .unchecked {
-    color: darkgrey;
-  }
+/* For any FA star */
+.checked {
+  color:orange;
+}
+
+.unchecked {
+  color: lightgrey;
+}
