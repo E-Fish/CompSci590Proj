@@ -50,7 +50,6 @@ span {
   color: darkred;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
   text-align: center;
-
   padding: 10px 7%;
   text-decoration: none;
 }
@@ -62,9 +61,9 @@ span {
   color: darkred;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
   text-align: center;
-  padding-right: 30px 7%;
-  padding-left: 30px 7%;
-  padding: 10px 7%;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-right: 70px;
   text-decoration: none;
 }
 
