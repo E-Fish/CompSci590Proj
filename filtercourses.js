@@ -50,7 +50,7 @@ function filtercourses()
     }
 } //End filterCourses
 function filtersubject(name){
-    let input = document.getElementById("coursesearch") //Get search input element
+    let input = document.getElementById("coursesearch"); //Get search input element
     input.value = name; //name into search bar
     filtercourses();
 }
