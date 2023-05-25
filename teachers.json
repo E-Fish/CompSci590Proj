@@ -1,0 +1,1184 @@
+[
+  {
+    "indexTeacher": 0,
+    "first": "Carla B",
+    "last": "Collins",
+    "dept": "Art"
+  },
+  {
+    "indexTeacher": 1,
+    "first": "Tara I",
+    "last": "Lewis",
+    "dept": "Art"
+  },
+  {
+    "indexTeacher": 2,
+    "first": "Rebecca L",
+    "last": "Pempek",
+    "dept": "Art"
+  },
+  {
+    "indexTeacher": 3,
+    "first": "Laura B",
+    "last": "Schneider",
+    "dept": "Art"
+  },
+  {
+    "indexTeacher": 4,
+    "first": "Matthew J",
+    "last": "Hartnett",
+    "dept": "Classical Languages"
+  },
+  {
+    "indexTeacher": 5,
+    "first": "Paul B",
+    "last": "Langford",
+    "dept": "Classical Languages"
+  },
+  {
+    "indexTeacher": 6,
+    "first": "Sally W",
+    "last": "Morris",
+    "dept": "Classical Languages"
+  },
+  {
+    "indexTeacher": 7,
+    "first": "Nicholas F",
+    "last": "Unger",
+    "dept": "Classical Languages"
+  },
+  {
+    "indexTeacher": 8,
+    "first": "Lina",
+    "last": "Wang",
+    "dept": "Classical Languages"
+  },
+  {
+    "indexTeacher": 9,
+    "first": "Colleen C",
+    "last": "Brodsky",
+    "dept": "Computer Science"
+  },
+  {
+    "indexTeacher": 10,
+    "first": "Sean F",
+    "last": "Campbell",
+    "dept": "Computer Science"
+  },
+  {
+    "indexTeacher": 11,
+    "first": "Ranila",
+    "last": "Haider",
+    "dept": "Computer Science"
+  },
+  {
+    "indexTeacher": 12,
+    "first": "Christina D",
+    "last": "Breen",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 13,
+    "first": "Jason M",
+    "last": "Bremiller",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 14,
+    "first": "Katie A",
+    "last": "Brule",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 15,
+    "first": "Jane S",
+    "last": "Cadwell",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 16,
+    "first": "Tyler",
+    "last": "Caldwell",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 17,
+    "first": "Mercy",
+    "last": "Carbonell",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 18,
+    "first": "Elizabeth L",
+    "last": "Dean",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 19,
+    "first": "Barbara S",
+    "last": "Desmond",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 20,
+    "first": "Michelle A",
+    "last": "Dionne",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 21,
+    "first": "Kelly M",
+    "last": "Flynn",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 22,
+    "first": "Nathaniel G",
+    "last": "Hawkins",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 23,
+    "first": "L. Todd",
+    "last": "Hearon",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 24,
+    "first": "W. Duncan",
+    "last": "Holcomb",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 25,
+    "first": "Erica P",
+    "last": "Lazure",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 26,
+    "first": "Courtney D",
+    "last": "Marshall",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 27,
+    "first": "Matthew W",
+    "last": "Miller",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 28,
+    "first": "M. Rebecca",
+    "last": "Moore",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 29,
+    "first": "Brooks S",
+    "last": "Moriarty",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 30,
+    "first": "Willie",
+    "last": "Perdomo",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 31,
+    "first": "Emily",
+    "last": "Quirk",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 32,
+    "first": "David",
+    "last": "Rhee",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 33,
+    "first": "Nova M",
+    "last": "Seals",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 34,
+    "first": "Raisa",
+    "last": "Tolchinsky",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 35,
+    "first": "Sahar I",
+    "last": "Ullah",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 36,
+    "first": "Ellen M",
+    "last": "Wolff",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 37,
+    "first": "Aidan O",
+    "last": "Wolff-King",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 38,
+    "first": "Chelsea S",
+    "last": "Woodard",
+    "dept": "English"
+  },
+  {
+    "indexTeacher": 39,
+    "first": "Elizabeth T",
+    "last": "Hurley",
+    "dept": "Health Education"
+  },
+  {
+    "indexTeacher": 40,
+    "first": "Shane C",
+    "last": "LaPointe",
+    "dept": "Health Education"
+  },
+  {
+    "indexTeacher": 41,
+    "first": "Robert S",
+    "last": "Morris",
+    "dept": "Health Education"
+  },
+  {
+    "indexTeacher": 42,
+    "first": "Courtney M",
+    "last": "Shaw",
+    "dept": "Health Education"
+  },
+  {
+    "indexTeacher": 43,
+    "first": "Michelle C",
+    "last": "Soucy",
+    "dept": "Health Education"
+  },
+  {
+    "indexTeacher": 44,
+    "first": "Brandon D",
+    "last": "Thomas",
+    "dept": "Health Education"
+  },
+  {
+    "indexTeacher": 45,
+    "first": "Alexa D",
+    "last": "Caldwell",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 46,
+    "first": "Meg",
+    "last": "Foley",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 47,
+    "first": "William G",
+    "last": "Jordan",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 48,
+    "first": "Aykut",
+    "last": "Kilinc",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 49,
+    "first": "Sally",
+    "last": "Komarek",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 50,
+    "first": "Nolan C",
+    "last": "Lincoln",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 51,
+    "first": "Fusheng",
+    "last": "Luo",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 52,
+    "first": "Betty C",
+    "last": "Luther-Hillman",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 53,
+    "first": "Khalid",
+    "last": "Madhi",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 54,
+    "first": "T. Michael",
+    "last": "Matsumaru",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 55,
+    "first": "Kent A",
+    "last": "McConnell",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 56,
+    "first": "Leah M",
+    "last": "Merrill",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 57,
+    "first": "Aviral",
+    "last": "Pathak",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 58,
+    "first": "Dionna",
+    "last": "Richardson-Alayyubi",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 59,
+    "first": "J. Troy",
+    "last": "Samuels",
+    "dept": "History"
+  },
+  {
+    "indexTeacher": 60,
+    "first": "Javier",
+    "last": "Alvarez",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 61,
+    "first": "Kevin G",
+    "last": "Bartkovich",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 62,
+    "first": "Eric S",
+    "last": "Bergofsky",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 63,
+    "first": "Dale E",
+    "last": "Braile",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 64,
+    "first": "Gwynneth G",
+    "last": "Coogan",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 65,
+    "first": "Diana J",
+    "last": "Davis",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 66,
+    "first": "Bassirou",
+    "last": "Diatta",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 67,
+    "first": "Scott",
+    "last": "Domingos",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 68,
+    "first": "Chelsea C",
+    "last": "Drescher",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 69,
+    "first": "Jessica A",
+    "last": "Emory",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 70,
+    "first": "Aaron J",
+    "last": "Fenyes",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 71,
+    "first": "Daniel C",
+    "last": "Garvey",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 72,
+    "first": "Panama C",
+    "last": "Geer",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 73,
+    "first": "Stephanie K",
+    "last": "Girard",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 74,
+    "first": "Brandon R",
+    "last": "Hew",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 75,
+    "first": "Fan",
+    "last": "Huang",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 76,
+    "first": "David A",
+    "last": "Huoppi",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 77,
+    "first": "Jeffrey J",
+    "last": "Ibbotson",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 78,
+    "first": "Rachel E",
+    "last": "Labes",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 79,
+    "first": "John E",
+    "last": "Mosley",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 80,
+    "first": "Makhtar",
+    "last": "Sarr",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 81,
+    "first": "Greg",
+    "last": "Spanier",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 82,
+    "first": "Wright",
+    "last": "Van",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 83,
+    "first": "Tim",
+    "last": "Whittemore",
+    "dept": "Math"
+  },
+  {
+    "indexTeacher": 84,
+    "first": "Diego",
+    "last": "Ardura",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 85,
+    "first": "Evelyn M",
+    "last": "Christoph",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 86,
+    "first": "Mika E",
+    "last": "Court",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 87,
+    "first": "Tracy R",
+    "last": "Crews",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 88,
+    "first": "Velazquez Humberto",
+    "last": "Delgado",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 89,
+    "first": "Katherine H",
+    "last": "Fair",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 90,
+    "first": "Jacqueline G",
+    "last": "Flores",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 91,
+    "first": "Ellen S",
+    "last": "Glassner",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 92,
+    "first": "P. Fermin",
+    "last": "Perez-Andreu",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 93,
+    "first": "Ariel",
+    "last": "Ramos",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 94,
+    "first": "Hershel P",
+    "last": "Reichlin",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 95,
+    "first": "Richard J",
+    "last": "Schieber",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 96,
+    "first": "Yunchiahn C",
+    "last": "Sena",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 97,
+    "first": "Levi P",
+    "last": "Stribling",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 98,
+    "first": "Inna",
+    "last": "Sysevich",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 99,
+    "first": "Amadou T",
+    "last": "Talla",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 100,
+    "first": "Kayoko",
+    "last": "Tazawa",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 101,
+    "first": "Mark L",
+    "last": "Trafton",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 102,
+    "first": "Ting",
+    "last": "Yuan",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 103,
+    "first": "Ning",
+    "last": "Zhou",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 104,
+    "first": "Marianne C",
+    "last": "Zwicker",
+    "dept": "Modern Languages"
+  },
+  {
+    "indexTeacher": 105,
+    "first": "Frederick A",
+    "last": "Aldrich",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 106,
+    "first": "Randall C",
+    "last": "Browning",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 107,
+    "first": "Charles L",
+    "last": "Christenson",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 108,
+    "first": "Mark A",
+    "last": "Cleveland",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 109,
+    "first": "III",
+    "last": "Crofoot",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 110,
+    "first": "Barbara C",
+    "last": "Darby",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 111,
+    "first": "Regina",
+    "last": "Delaney",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 112,
+    "first": "Brendan A",
+    "last": "Evans",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 113,
+    "first": "Laura M",
+    "last": "Grube",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 114,
+    "first": "Eva C",
+    "last": "Gruesser",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 115,
+    "first": "Svetlana",
+    "last": "Gurina",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 116,
+    "first": "Jodi",
+    "last": "Hagen",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 117,
+    "first": "Les",
+    "last": "Harris",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 118,
+    "first": "Jacob D",
+    "last": "Hiser",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 119,
+    "first": "Charles D",
+    "last": "Jennison",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 120,
+    "first": "Kristofer T",
+    "last": "Johnson",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 121,
+    "first": "Louise F",
+    "last": "Kandle",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 122,
+    "first": "Keala",
+    "last": "Kaumeheiwa",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 123,
+    "first": "Mina",
+    "last": "Kim",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 124,
+    "first": "Zachary A",
+    "last": "King",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 125,
+    "first": "Hyun-ji",
+    "last": "Kwon",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 126,
+    "first": "Chi-ju J",
+    "last": "Lai",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 127,
+    "first": "Jung Mi",
+    "last": "Lee",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 128,
+    "first": "Melissa A",
+    "last": "Mielens",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 129,
+    "first": "Velleda C",
+    "last": "Miragias",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 130,
+    "first": "Yeolim",
+    "last": "Nam",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 131,
+    "first": "Gregory C",
+    "last": "Newton",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 132,
+    "first": "Barbara J",
+    "last": "O'Brien",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 133,
+    "first": "Petra",
+    "last": "Pacaric",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 134,
+    "first": "Kina",
+    "last": "Park",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 135,
+    "first": "Beverly",
+    "last": "Perriccio",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 136,
+    "first": "Dimitar",
+    "last": "Petkov",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 137,
+    "first": "Marcus D",
+    "last": "Rabb",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 138,
+    "first": "Radmila H",
+    "last": "Repczynski",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 139,
+    "first": "Isao J",
+    "last": "Sakata",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 140,
+    "first": "Angelina M",
+    "last": "Savoia",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 141,
+    "first": "Eric",
+    "last": "Schultz",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 142,
+    "first": "Eric",
+    "last": "Sinclair",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 143,
+    "first": "Rohan G",
+    "last": "Smith",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 144,
+    "first": "Silvana",
+    "last": "Sokolov-Grubb",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 145,
+    "first": "Michael",
+    "last": "Strauss",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 146,
+    "first": "Jean S",
+    "last": "Strazdes",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 147,
+    "first": "John E",
+    "last": "Tanzer",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 148,
+    "first": "Brian J",
+    "last": "Thacker",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 149,
+    "first": "Ryan",
+    "last": "Thomson",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 150,
+    "first": "Lezlie",
+    "last": "Webster",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 151,
+    "first": "Catherine A",
+    "last": "Weinfield-Zell",
+    "dept": "Music"
+  },
+  {
+    "indexTeacher": 152,
+    "first": "Hannah L",
+    "last": "Hofheinz",
+    "dept": "Religion"
+  },
+  {
+    "indexTeacher": 153,
+    "first": "Patrick A",
+    "last": "Kelly",
+    "dept": "Religion"
+  },
+  {
+    "indexTeacher": 154,
+    "first": "Fox Kaitlyn",
+    "last": "Martin",
+    "dept": "Religion"
+  },
+  {
+    "indexTeacher": 155,
+    "first": "Asch",
+    "last": "Marx",
+    "dept": "Religion"
+  },
+  {
+    "indexTeacher": 156,
+    "first": "Hina",
+    "last": "Muneeruddin",
+    "dept": "Religion"
+  },
+  {
+    "indexTeacher": 157,
+    "first": "Thomas W",
+    "last": "Simpson",
+    "dept": "Religion"
+  },
+  {
+    "indexTeacher": 158,
+    "first": "John A",
+    "last": "Blackwell",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 159,
+    "first": "Michele L",
+    "last": "Chapman",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 160,
+    "first": "Townley W",
+    "last": "Chisholm",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 161,
+    "first": "A.J",
+    "last": "Cosgrove",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 162,
+    "first": "James A",
+    "last": "DiCarlo",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 163,
+    "first": "Anthony J",
+    "last": "Fuda",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 164,
+    "first": "Shimaa M",
+    "last": "Ghazal",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 165,
+    "first": "Sydnee M",
+    "last": "Goddard",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 166,
+    "first": "David W",
+    "last": "Gulick",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 167,
+    "first": "Katherine S",
+    "last": "Hernandez",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 168,
+    "first": "Tanea T",
+    "last": "Hibler",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 169,
+    "first": "Donna M",
+    "last": "Hilton",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 170,
+    "first": "Mark R",
+    "last": "Hiza",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 171,
+    "first": "Alison E",
+    "last": "Hobbie",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 172,
+    "first": "Frances A",
+    "last": "Johnson",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 173,
+    "first": "Karlee J",
+    "last": "Koswick",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 174,
+    "first": "J. Albert",
+    "last": "Leger",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 175,
+    "first": "Jeanette S",
+    "last": "Lovett",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 176,
+    "first": "Christopher R",
+    "last": "Matlack",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 177,
+    "first": "Andrew G",
+    "last": "McTammany",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 178,
+    "first": "Melissa D",
+    "last": "Mischke",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 179,
+    "first": "Summer A",
+    "last": "Morrill",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 180,
+    "first": "Susan Y",
+    "last": "Park",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 181,
+    "first": "Anne E",
+    "last": "Rankin",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 182,
+    "first": "Brad",
+    "last": "Robinson",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 183,
+    "first": "Cheryl A",
+    "last": "Rotondo",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 184,
+    "first": "Wendy",
+    "last": "Stallings",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 185,
+    "first": "Elizabeth O",
+    "last": "Stevens",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 186,
+    "first": "Devin W",
+    "last": "Thomas",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 187,
+    "first": "Tatiana D",
+    "last": "Waterman",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 188,
+    "first": "Christina R",
+    "last": "Zeigler",
+    "dept": "Science"
+  },
+  {
+    "indexTeacher": 189,
+    "first": "Amberlee",
+    "last": "Darling",
+    "dept": "Theatre and Dance"
+  },
+  {
+    "indexTeacher": 190,
+    "first": "Jacob M",
+    "last": "Josef",
+    "dept": "Theatre and Dance"
+  },
+  {
+    "indexTeacher": 191,
+    "first": "Lauren R",
+    "last": "Josef",
+    "dept": "Theatre and Dance"
+  },
+  {
+    "indexTeacher": 192,
+    "first": "Anthony L",
+    "last": "Reed",
+    "dept": "Theatre and Dance"
+  },
+  {
+    "indexTeacher": 193,
+    "first": "Robert G",
+    "last": "Richards",
+    "dept": "Theatre and Dance"
+  },
+  {
+    "indexTeacher": 194,
+    "first": "Allison M",
+    "last": "Sarage",
+    "dept": "Theatre and Dance"
+  },
+  {
+    "indexTeacher": 195,
+    "first": "Melissa M",
+    "last": "Schultz",
+    "dept": "Theatre and Dance"
+  },
+  {
+    "indexTeacher": 196,
+    "first": "Samm",
+    "last": "Wesler",
+    "dept": "Theatre and Dance"
+  }
+]
