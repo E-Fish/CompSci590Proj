@@ -54,7 +54,8 @@ span {
   text-decoration: none;
 }
 
-.navbar .npbutton {
+/* For navbar button */
+.npbutton {
   float: right;
   font-weight: bold;
   font-size: 20px;
@@ -65,6 +66,7 @@ span {
   margin-top: 0px;
   margin-right: 70px;
   text-decoration: none;
+  padding: 0px 7%;
 }
 
 /* The subnavigation menu */
@@ -86,22 +88,6 @@ span {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-}
-
-/* Add a red background color to navigation links on hover */
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: darkred;
-  color:white;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-  cursor: pointer;
-}
-
-/* Not using navbar b currently */
-.navbar b:hover, .subnav:hover .subnavbtn {
-  background-color: darkred;
-  color:white;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-  cursor: pointer;
 }
 
 /* Style the subnav content - positioned absolute */
@@ -126,17 +112,18 @@ span {
   text-decoration: none;
 }
 
-/* Add a grey background color on hover */
-.subnav-content a:hover {
-  background-color: darkred;
-  color: white;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
 /* When you move the mouse over the subnav container, open the subnav content */
 .subnav:hover .subnav-content {
   display: block;
   border-bottom: 2px solid darkred;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn, .npbutton:hover, .subnav-content a:hover{
+  background-color: darkred;
+  color:white;
+  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  cursor: pointer;
 }
 
 /* Style the header: fixed position (always stay at the top) */
