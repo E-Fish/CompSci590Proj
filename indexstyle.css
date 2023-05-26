@@ -42,9 +42,7 @@ span {
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-/* Navigation links */
 .navbar a {
-  float: left;
   font-weight: bold;
   font-size: 20px;
   color: darkred;
@@ -57,16 +55,13 @@ span {
 /* For navbar button */
 .npbutton {
   float: right;
-  font-weight: bold;
-  font-size: 20px;
-  color: darkred;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: 0px;
+  padding: 10px 7%;
+}
+
+.rpbutton {
+  float: left;
   margin-right: 70px;
-  text-decoration: none;
-  padding: 0px 7%;
+  padding: 10px 7%;
 }
 
 /* The subnavigation menu */
