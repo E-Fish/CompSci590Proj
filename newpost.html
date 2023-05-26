@@ -11,12 +11,10 @@
     </head> 
   <!-- Navbar stuff: Same on all tabs -->
   <div class="navbar">
-    <a class = "active" href="index.html">RatePEA</a>
+    <a class="rpbutton" class = "active" href="index.html">RatePEA</a>
     
    <!--EDITED DROPDOWN NAV CODE WITH NEW FILTERSUBJECT FUNCTION - need to edit the rest of the dropdown accordingly-->
-    <div class="npbutton">
-     <a href="newpost.html">NewPost</a>
-    </div>
+     <a class="npbutton" href="newpost.html">NewPost</a>
 
   </div>
 
@@ -29,7 +27,7 @@
         <!-- Table and content inside the table -->
         <div>
             <!-- Declaring form -->
-            <form action="http://localhost:4000/" method="post">
+            <form action="/http://localhost:4000/" method="post">
               <!-- Creating table 1 (Username)-->
               <table>
                  <th>
@@ -117,7 +115,7 @@
                   <br>
                 </th>
                 <th>
-                  <input type="submit" class="button" value="Submit">
+                  <input type="submit" href="index.html" class="button" value="Submit">
                 </th>
               </table>
               </table>
