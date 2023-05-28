@@ -15,7 +15,7 @@ async function addcourses()
         let index = courses[i].indexCourse; //The course index
         let name = courses[i].name; //The class name
         let title = courses[i].title; //The class title
-        let description = courses[i].description;
+        let description = courses[i].desc; //The class description
 
          //lastUser, lastDate, and averageRating should come from database
         let lastUser = "lionrampant" + cnt.toString();
@@ -41,13 +41,13 @@ async function addcourses()
 
         //Create a tag for the course description but don't display it
         let mydesc = document.createElement("p");
-        mydesc.setAttribute("id", "courseDescription"+index);
+        mydesc.setAttribute("id", "courseDescription" + index);
         mydesc.innerText = description;
         mydesc.style.display = "none"; //doesn't take up space and not shown
        
         //Create a tag for the average rating but don't display it
         let myrating = document.createElement("p");
-        myrating.setAttribute("id", "courseRating"+index);
+        myrating.setAttribute("id", "courseRating" + index);
         myrating.innerText = rating;
         myrating.style.display = "none"; //doesn't take up space and not shown
        
@@ -64,9 +64,9 @@ async function addcourses()
         for (let i = 0; i < rating; i++) {
             starString += "<i class = 'fa fa-star checked' style='font-size:30px'></i>"
         }
-        for (let i = rating; i<5; i++) {
-            starString += "<i class = 'fa fa-star unchecked' style='font-size:30px'></i>"
-        }
+        //for (let i = rating; i<5; i++) {
+        //    starString += "<i class = 'fa fa-star unchecked' style='font-size:30px'></i>"
+        //}
         Stars.innerHTML = starString;
         
         mycard.appendChild(myname);
