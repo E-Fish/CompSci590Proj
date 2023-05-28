@@ -5,39 +5,29 @@
       <link rel="stylesheet" href="indexstyle.css" >
       <link rel="stylesheet" href="courseratingstyle.css" >
       <link rel="stylesheet" type="text/css" href="poststyle.css" >
-        <!-- Stylesheet to make stars -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <title>
-              Course
-          </title>                
+      <!-- Stylesheet to make stars -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>
+            Course
+        </title>                
     </head>
 
-    <body onload="addcoursereviews()">
+  <body onload="addcoursereviews()">
+  <body onload="addcourseinfo()">
 
   <!-- Navbar stuff: Same on all tabs -->
   <div class="navbar">
     <a  class="rpbutton" class = "active" href="index.html">RatePEA</a>
     <a class="npbutton" href="newpost.html">NewPOST</a>
-
   </div>
-    <!-- Course Info -->
-    <!-- I'm not sure how we are going to be able to plug in the actual data here, I'm just putting text as a filler-->
-        <h2>
-          Course Number: Coursename
-        </h2>
-        <h4>
-          Rating: <!-- Temporary stars to prove the fa stars work -->
-          <i class = 'fa fa-star checked' style='font-size:40px'></i> <i class = 'fa fa-star checked' style='font-size:40px'></i> <i class = 'fa fa-star unchecked' style='font-size:40px'></i> <i class = 'fa fa-star unchecked' style='font-size:40px'></i> <i class = 'fa fa-star unchecked' style='font-size:40px'></i>
-          <div id="allcourses"></div>
-          <script src="addcourserating.js"></script>
-          <br>
-          Subject: xxx
-          <br>
-          Description: xxx
-        </h4>
+  
+  <!-- Course Info -->
+  <div id="allInfo"></div>
+  <script src="addcourseinfo.js"></script>
 
-    <div id="allreviews"></div>
-    <!-- Adding course reviews to course page -->
-    <!-- Does this line below do anything? -->
-    <script src="addcoursereviews.js"></script>
+  <!-- Course Reviews -->
+  <div id="allreviews"></div>
+  <!-- Adding course reviews to course page -->
+  <!-- Does this line below do anything? -->
+  <script src="addcoursereviews.js"></script>
 </html>
