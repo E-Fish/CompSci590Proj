@@ -19,9 +19,6 @@ async function addcourseinfo()
         let description = courses[i].desc; //description of course from course book
         let rating = courses[i].rating; //rating of course (not yet in courses.json file)
 
-        let myinfo = document.createElement ("div")
-        myinfo.setAtrtribute("class", "h4");
-
         let courseName = document.createElement("div");
         courseName.setAttribute("class", "h4");
         courseName.innerText = name;
@@ -34,9 +31,8 @@ async function addcourseinfo()
         courseDescription.setAttribute("class", "h4");
         courseDescription.innerText = description;
 
-        myinfo.appendChild(courseName + " : " + courseTitle);
-        myinfo.appendChild("Description: " + courseDescription)
-        divTag.appendChild(myinfo);
+        divTag.appendChild(courseName + " : " + courseTitle);
+        divTag.appendChild("Description: " + courseDescription);
 
         cnt++;
     }
