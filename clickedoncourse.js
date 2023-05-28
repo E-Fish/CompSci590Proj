@@ -3,18 +3,24 @@ When the user clicks on a course, the "class" page loads where the user can read
 the reviews for that class. 
 */
 function clickedoncourse(index) {
-    let collection = document.getElementsByClassName("courseCard");
+    let allCards = document.getElementsByClassName("courseCard");
    
-    if (collection.length == 0) {
+    if (allCards.length == 0) {
         alert("clickedoncourse: error getting course cards");
     }
+    
+    let name = document.getElementById("courseName"+index).innerText;
+    let title = document.getElementById("courseTitle"+index).innerText;
+    let desc = document.getElementById("courseDescription"+index).innerText;
+    let rating = document.getElementById("courseRating"+index).innerText;
    
-    let name = collection[index].childNodes[0].innerHTML;
-   
-    //stores the name in the browser storage. When we load the class page, we will look it up.
-    localStorage.setItem("className", name);
-    localStorage.setItem("classIndex", index);
-    //
+    //Store these in browser storage. When we load the class page, we will look it up.
+    localStorage.setItem("courseIndex", index);
+    localStorage.setItem("courseName", name);
+    localStorage.setItem("courseTitle", title);
+    localStorage.setItem("courseDescription", desc);
+    localStorage.setItem("courseRating", rating);
+    
     //gets the path to this page
     let path = window.location.pathname;
    
