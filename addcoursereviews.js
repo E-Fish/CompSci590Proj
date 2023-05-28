@@ -9,7 +9,8 @@
 //
 async function addcoursereviews()
 {
-    let selected = localStorage.getItem("classIndex");
+    addcourseinfo();
+    let selected = localStorage.getItem("courseIndex");
     console.log("Trying to fetch posts")
     let response = await fetch("https://raw.githubusercontent.com/E-Fish/CompSci590Proj/main/static/posts.json");
     let posts = await response.json();
