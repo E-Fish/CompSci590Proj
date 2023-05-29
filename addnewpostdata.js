@@ -34,7 +34,7 @@ async function addcourses()
     let courses = await response.json();
  
     //Get the datalist
-    let datalist = document.getElementById("coursename");
+    let datalist = document.getElementById("coursecode");
    
     for (let i in courses) {
         let name = courses[i].name
