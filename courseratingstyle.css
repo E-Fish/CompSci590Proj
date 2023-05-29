@@ -138,7 +138,7 @@ p{
   color: lightgrey;
 }
 
-.courseNameTitle{
+#courseNameTitle{
   color: darkred;
   font-size: 70px;
   font-weight: bold;
@@ -148,14 +148,14 @@ p{
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-.courseRating{
+#courseRating{
   margin-left: 30px;
   margin-top: 15px;
   margin-bottom: 15px;
   text-align: left;
 }
 
-.courseDescription{
+#courseDescription{
   color: darkred;
   font-size: 25px;
   text-align:left;
