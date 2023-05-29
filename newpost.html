@@ -41,7 +41,7 @@
               <table>
                 <th>
                   <label class="labelsf" for="coursecode">Course ID:</label>
-                  <div class="ids">
+                  <div class="datalist">
                     <input list="coursecode" name="coursecode" placeholder="As listed in the course catalog... ie. MAT321" required>
                       <datalist id="coursecode">
                           <!-- JavaScript inserts coursecode here -->
@@ -72,11 +72,11 @@
                   <label class="labelsf" for="rating">Course Rating:</label>
                   <!-- Adding stars -->
                   <div class="rating">
-                    <input type="radio" id="star5" name="rating" value="5" ><label for="star5"></label>
-                    <input type="radio" id="star4" name="rating" value="4" ><label for="star4"></label>
-                    <input type="radio" id="star3" name="rating" value="3" ><label for="star3"></label>
-                    <input type="radio" id="star2" name="rating" value="2" ><label for="star2"></label>
-                    <input type="radio" id="star1" name="rating" value="1" ><label for="star1"></label>
+                    <input type="radio" id="star5" name="rating" value="5" required><label for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4" required ><label for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3" checked="checked" required ><label for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2" required ><label for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1" required ><label for="star1"></label>
                 </div> 
                 </th>
               </table>
@@ -96,7 +96,7 @@
                 </th>
                 <th>
                   <label class="labelsf" for="teachercomments">Tell me about your Teacher. What dorm are they in? <br> Did they use reserve? What is their teaching style?<br></label>             
-                  <textarea rows="3" cols="50" id = "comments" name = "teachercomments" required> </textarea>
+                  <textarea rows="3" cols="50" id = "comments" name = "teachercomments" required></textarea>
                 </th>
               </table>
               <br>
@@ -105,7 +105,7 @@
                 <th>
                   <br>
                   <label class="labelsf" for="comments">Comments and Review (How did you enjoy the course? Would you recomend it to others?)</label>
-                  <br><textarea rows="10" cols="80" id = "comments" name ="coursecomments" required> </textarea></br>
+                  <br><textarea rows="10" cols="80" id = "comments" name ="coursecomments" required></textarea></br>
                   <br>
                 </th>
                 <th>
