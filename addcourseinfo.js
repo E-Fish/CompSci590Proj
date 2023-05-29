@@ -5,22 +5,18 @@ function addcourseinfo()
     let courseDescription = localStorage.getItem("courseDescription");
     let courseRating = localStorage.getItem("courseRating");
    
-    let name = document.getElementById("courseName");
-    name.innerText = courseName;
-   
-    let title = document.getElementById("courseTitle");
-    title.innerText = courseTitle;
+    let nametitle = document.getElementById("courseNameTitle");
+    nametitle.innerText = courseName + " - " + courseTitle;
    
     let description = document.getElementById("courseDescription");
-    description.innerText = courseDescription;
+    description.innerText = "Description: " + courseDescription;
    
     let r = parseInt(courseRating);
     let rating = document.getElementById("courseRating");
    
     let starString = "";
     for (let i = 0; i < r; i++) {
-        starString += "<i class = 'fa fa-star checked' style='font-size:30px'></i>"
+        starString += "<i class = 'fa fa-star checked' style='font-size:50px' 'fa-align-left'></i>"
     }
     rating.innerHTML = starString;
 }
-
