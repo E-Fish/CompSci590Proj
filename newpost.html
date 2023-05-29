@@ -9,7 +9,7 @@
         New Post
       </title>
     </head> 
-  <body onload="addteachers()">
+  <body onload="addcoursesandteachers()">
   <!-- Navbar stuff: Same on all tabs -->
   <div class="navbar">
     <!-- Bug: cannot have two classes on one tag -->
@@ -42,7 +42,10 @@
                 <th>
                   <label class="labelsf" for="coursecode">Course ID:</label>
                   <div class="ids">
-                    <input type="text" id="coursecode" name="coursecode" placeholder="As listed in the course catalog... ie. MAT321" required>
+                    <input list="coursecode" name="coursecode" placeholder="As listed in the course catalog... ie. MAT321" required>
+                      <datalist id="coursecode">
+                          <!-- JavaScript inserts coursecode here -->
+                      </datalist>
                   </div>
                 </th>
                 <th>
