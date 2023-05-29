@@ -9,21 +9,20 @@
         New Post
       </title>
     </head> 
+  <body onload="addteachers()">
   <!-- Navbar stuff: Same on all tabs -->
   <div class="navbar">
+    <!-- Bug: cannot have two classes on one tag -->
     <a class="rpbutton" class = "active" href="index.html">RatePEA</a>
     
    <!--EDITED DROPDOWN NAV CODE WITH NEW FILTERSUBJECT FUNCTION - need to edit the rest of the dropdown accordingly-->
      <a class="npbutton" href="newpost.html">NewPost</a>
 
   </div>
-
-    <body onload="addteachers()">
         <!-- Header on top of page -->
         <h2>
           Create a New Post        
         </h2>
-        </div>
         <!-- Table and content inside the table -->
         <div>
             <!-- Declaring form -->
@@ -70,11 +69,11 @@
                   <label class="labelsf" for="rating">Course Rating:</label>
                   <!-- Adding stars -->
                   <div class="rating">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+                    <input type="radio" id="star5" name="rating" value="5" ><label for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4" ><label for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3" ><label for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2" ><label for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1" ><label for="star1"></label>
                 </div> 
                 </th>
               </table>
@@ -93,7 +92,7 @@
                   <br>
                 </th>
                 <th>
-                  <label class="labelsf" for="teacherComments">Tell me about your Teacher. What dorm are they in? <br> Did they use reserve? What is their teaching style?<br></label>             
+                  <label class="labelsf" for="teachercomments">Tell me about your Teacher. What dorm are they in? <br> Did they use reserve? What is their teaching style?<br></label>             
                   <textarea rows="3" cols="50" id = "comments" name = "teachercomments" required> </textarea>
                 </th>
               </table>
