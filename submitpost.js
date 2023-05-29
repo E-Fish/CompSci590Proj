@@ -34,8 +34,8 @@ app.post("/", function(req, res) {
         term: req.body.term,
         rating: req.body.rating,
         teacher: req.body.teachername,
-        teachercomments: req.body.teachercomments,
-       coursecomments: req.body.coursecomments,
+        teachercomments: req.body.teacherComments,
+       coursecomments: req.body.courseComments,
 
    })
    newCourse.save();
