@@ -29,16 +29,8 @@ h2 {
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-/* For search bar on Homepage */
+/* For search bar text on Homepage */
 h3 {
-  color: darkred;
-  font-size: 20px;
-  text-align:center;
-  margin: 10px 0;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
-h3 a {
   color: darkred;
   font-size: 20px;
   text-align:center;
@@ -90,10 +82,22 @@ p{
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
+/* For text in newpost.html */
 .body{
   color: darkred;
   font-size: 20px;
   text-align:left;
+  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+/* For entire postCard formatting */
+.postCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 2px solid darkred; 
+  padding: 15px 20px;  /* spacing inside card around text */
+  border-radius: 25px; /* rounded borders */
+  color: darkred;
+  text-align: center;
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
@@ -105,6 +109,7 @@ p{
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
+/* For date in post card */
 .date{
   color: darkred;
   font-size: 15px;
@@ -112,16 +117,7 @@ p{
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-.postCard {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border: 2px solid darkred; 
-  padding: 15px 20px;  /* spacing inside card around text */
-  border-radius: 25px; /* rounded borders */
-  color: darkred;
-  text-align: center;
-  font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
-}
-
+/* For the entire divtag */
 #allreviews {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -138,7 +134,8 @@ p{
   color: lightgrey;
 }
 
-#courseNameTitle{
+/* For course name and title info on course.html */
+.courseNameTitle{
   color: darkred;
   font-size: 70px;
   font-weight: bold;
@@ -148,14 +145,16 @@ p{
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-#courseRating{
+/* For course rating on course.html */
+.courseRating{
   margin-left: 30px;
   margin-top: 15px;
   margin-bottom: 15px;
   text-align: left;
 }
 
-#courseDescription{
+/* For course description on course.html */
+.courseDescription{
   color: darkred;
   font-size: 25px;
   text-align:left;
