@@ -13,7 +13,6 @@ span {
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-
 /* For the "Submit" button on the newPost page*/
 .button {
   background-color: darkred;
@@ -42,6 +41,7 @@ span {
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
+/* For other aspects of the navbar */
 .navbar a {
   font-weight: bold;
   font-size: 20px;
@@ -52,12 +52,13 @@ span {
   text-decoration: none;
 }
 
-/* For navbar button */
+/* For newPost button */
 .npbutton {
   float: right;
   padding: 10px 7%;
 }
 
+/* For ratePEA button */
 .rpbutton {
   float: left;
   margin-right: 70px;
@@ -157,12 +158,13 @@ span {
   border-radius: 0px;
 }
 
+/* When clicking on the search bar */
 .index input[type=text]:focus {
   width: 43%;
   outline: none;
 }
 
-/* For Tables */
+/* For Tables to divide html */
 table, td, th {
   border: 0px solid;
 }
@@ -177,6 +179,7 @@ table {
   border-collapse: collapse;
 }
 
+/* For genarl course card formatting */
 .courseCard{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.2s;
@@ -191,7 +194,7 @@ table {
   font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
 }
 
-/* Allowing coursecards to expand when the text becomes too much */
+/* For all courses divTag */
 #allcourses {
   display: grid;
   grid-template-columns: auto auto;
@@ -226,6 +229,7 @@ table {
   cursor: pointer;
 }
 
+/* For the rating on the course cards */
 .courseCard .rating {
   color: #ffd700; /* set the color of the stars */
   font-size: 24px; /* set the size of the stars */
