@@ -8,6 +8,7 @@
         <title>
             Rate PEA 
         </title>
+        <!-- Creating lion on top of course tab -->
         <link rel="icon" href="favicon.ico" type="image/x-icon" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     </head> 
@@ -15,11 +16,12 @@
     <!-- Adding the courses to the page -->
     <body onload="addcourses()"> 
 
-    <!-- Navbar stuff: Same on all tabs -->
+    <!-- Navbar stuff-->
     <div class="navbar">
-        <a class="rpbutton" class = "active" href="index.html">RatePEA</a>
+      <!-- For RatePEA Button -->
+      <a class="rpbutton" class = "active" href="index.html">RatePEA</a>
         
-       <!--EDITED DROPDOWN NAV CODE WITH NEW FILTERSUBJECT FUNCTION - need to edit the rest of the dropdown accordingly-->
+       <!-- Filters courses when you click on navbar items-->
        <div class="subnav">
           <button class="subnavbtn" >Arts</button>
           <div class="subnav-content">
@@ -111,21 +113,22 @@
             <a onclick="filtersubject('EXI')">Exeter Innovation</a>
             <a onclick="filtersubject('HHD')">Health</a>
             <a onclick="filtersubject('INT')">Integrated Studies</a>
+          </div>
         </div>
-        </div>
-        <a class="npbutton" href="newpost.html">NewPost</a>
-        
-  
+
+        <!-- For newpost button -->
+        <a class="npbutton" href="newpost.html">NewPost</a>  
     </div>
     
       <!-- Everything on the page -->
+        <!-- Span to make the 2023 smaller -->
         <h6>
             RatePEA<span>2023</span>
         </h6>
-
         <h3>
-            <a>Search Course:</a>
+            Search Course:
         </h3>
+        <!-- Creating search bar -->
         <form>
           <div class="index">
             <!-- Allowing search bar function -->
@@ -133,7 +136,7 @@
           </div>
         </form>
 
-        <!-- Adding the add course and filter course functions/classes -->
+        <!-- Adding the add course and filter course functions/divtags -->
         <div id="allcourses"></div>
         <script src="addcourses.js"></script>
         <script src="filtercourses.js"></script>
