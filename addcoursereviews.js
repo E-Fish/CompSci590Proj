@@ -11,12 +11,14 @@ async function addcoursereviews()
 {
     // This combines the course info to the course reviews for ease of use
     addcourseinfo();
+
+    // Retrieves information from JSON files
     let selected = localStorage.getItem("courseIndex");
     console.log("Trying to fetch posts")
     let response = await fetch("https://raw.githubusercontent.com/E-Fish/CompSci590Proj/main/static/posts.json");
     let posts = await response.json();
  
-    //Get the divTag
+    //Creates a divTag
     let divTag = document.getElementById("allreviews");
    
     //Loop through all courses
