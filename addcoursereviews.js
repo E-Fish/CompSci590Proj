@@ -9,6 +9,7 @@
 //
 async function addcoursereviews()
 {
+    // This combines the course info to the course reviews for ease of use
     addcourseinfo();
     let selected = localStorage.getItem("courseIndex");
     console.log("Trying to fetch posts")
@@ -18,18 +19,12 @@ async function addcoursereviews()
     //Get the divTag
     let divTag = document.getElementById("allreviews");
    
-    //What does this do?
-    while (divTag.hasChildNodes()) {
-        divTag.removeChild(divTag.firstChild);
-    }
-   
     //Loop through all courses
     for (let i in posts) {
         //Grabs code from only the one course
         let index = posts[i].indexCourse; //course index
         if (index != selected) continue;
         
-        //Not using title because that's not an option in post
         let user = posts[i].user; //username
         let term = posts[i].term; //term
         let teacher = posts[i].indexTeacher; //teacher (filler because we need teacher and teacher review elements)
@@ -77,12 +72,15 @@ async function addcoursereviews()
         }
         Stars.innerHTML = starString;
         
+        // Appends all the review components to the "post cards"
         mycard.appendChild(Stars);
         mycard.appendChild(User);
         mycard.appendChild(Term);
         mycard.appendChild(Teacher);
         mycard.appendChild(Review);  
-        mycard.appendChild(Date);      
+        mycard.appendChild(Date);    
+        
+        // Appends the "post cards" to the entire divTag
         divTag.appendChild(mycard);
     }
 } //End addCourseReviews
