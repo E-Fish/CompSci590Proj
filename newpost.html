@@ -9,113 +9,127 @@
         New Post
       </title>
     </head> 
-  <body onload="addcoursesandteachers()">
-  <!-- Navbar stuff: Same on all tabs -->
-  <div class="navbar">
-    <!-- Bug: cannot have two classes on one tag -->
-    <a class="rpbutton" class = "active" href="index.html">RatePEA</a>
-    
-   <!--EDITED DROPDOWN NAV CODE WITH NEW FILTERSUBJECT FUNCTION - need to edit the rest of the dropdown accordingly-->
-     <a class="npbutton" href="newpost.html">NewPost</a>
 
-  </div>
-        <!-- Header on top of page -->
-        <h2>
-          Create a New Post        
-        </h2>
-        <!-- Table and content inside the table -->
-        <div>
-            <!-- Declaring form -->
-            <form action="/http://localhost:4000/" method="post">
-              <!-- Creating table 1 (Username)-->
-              <table>
-                 <th>
-                  <br>
-                  <label class="labelsf" for="username">Username:</label>
-                  <input type="text" id="username" name="username" placeholder="Create a username ..." required>
-                  <br>
-                </th>
-              </table>
-              <br>
-              <!-- Creating table 2 (Course related information/inputs) -->
-              <table>
-                <th>
-                  <label class="labelsf" for="coursecode">Course ID:</label>
-                  <div class="datalist">
-                    <input list="coursecode" name="coursecode" placeholder="As listed in the course catalog... ie. MAT321" required>
-                      <datalist id="coursecode">
-                          <!-- JavaScript inserts coursecode here -->
-                      </datalist>
-                  </div>
-                </th>
-                <th>
-                  <br>
-                  <label class="labelsf" for="term">Term you took the course:</label>               
-                  <div class = "datalist">
-                    <input list = "term" name="term" placeholder="Search for Term" required>
-                    <!-- Datalist allows for seach and select -->
-                    <datalist id="term">
-                      <option value="Fall2020"></option>
-                      <option value="Winter2020"></option>
-                      <option value="Spring2021"></option>
-                      <option value="Fall2021"></option>
-                      <option value="Winter2021"></option>
-                      <option value="Spring2022"></option>
-                      <option value="Fall2022"></option>
-                      <option value="Winter2022"></option>
-                      <option value="Spring2023"></option>             
-                    </datalist>
-                  </div>                 
+  <body onload="addcoursesandteachers()">
+
+    <!-- Navbar stuff-->
+    <div class="navbar">
+      <!-- For Rate PEA button-->
+      <a class="rpbutton" class = "active" href="index.html">RatePEA</a>
+      
+      <!-- For newPost button -->
+      <a class="npbutton" href="newpost.html">NewPost</a>
+
+    </div>
+          <!-- Header on top of page -->
+          <h2>
+            Create a New Post        
+          </h2>
+
+          <!-- Table and content inside the table -->
+          <div>
+              <!-- Declaring form -->
+              <form action="/http://localhost:4000/" method="post">
+                <!-- Creating table 1 (Username)-->
+                <table>
+                  <th>
+                    <br>
+                    <label class="labelsf" for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Create a username ..." required>
+                    <br>
+                  </th>
+                </table>
                 <br>
-                </th>
-                <th>
-                  <label class="labelsf" for="rating">Course Rating:</label>
-                  <!-- Adding stars -->
-                  <div class="rating">
-                    <input type="radio" id="star5" name="rating" value="5" required><label for="star5"></label>
-                    <input type="radio" id="star4" name="rating" value="4" required ><label for="star4"></label>
-                    <input type="radio" id="star3" name="rating" value="3" checked="checked" required ><label for="star3"></label>
-                    <input type="radio" id="star2" name="rating" value="2" required ><label for="star2"></label>
-                    <input type="radio" id="star1" name="rating" value="1" required ><label for="star1"></label>
-                </div> 
-                </th>
-              </table>
-              <br>
-              <!-- Creating table 3 (Teacher related information/inputs) -->
-              <table>
-                <th>
+
+                <!-- Creating table 2 (Course related information/inputs) -->
+                <table>
+                  <!-- For courseIDs -->
+                  <th>
+                    <label class="labelsf" for="coursecode">Course ID:</label>
+                    <!-- Creates a data list to input all courseIDs into-->
+                    <div class="datalist">
+                      <input list="coursecode" name="coursecode" placeholder="As listed in the course catalog... ie. MAT321" required>
+                        <datalist id="coursecode">
+                        </datalist>
+                    </div>
+                  </th>
+
+                  <th>
+                    <br>
+                    <!-- Creates a dataList for term taken -->
+                    <label class="labelsf" for="term">Term you took the course:</label>               
+                    <div class = "datalist">
+                      <input list = "term" name="term" placeholder="Search for Term" required>
+                      <!-- Datalist allows for seach and select -->
+                      <datalist id="term">
+                        <option value="Fall2020"></option>
+                        <option value="Winter2020"></option>
+                        <option value="Spring2021"></option>
+                        <option value="Fall2021"></option>
+                        <option value="Winter2021"></option>
+                        <option value="Spring2022"></option>
+                        <option value="Fall2022"></option>
+                        <option value="Winter2022"></option>
+                        <option value="Spring2023"></option>             
+                      </datalist>
+                    </div>                 
                   <br>
-                  <label class="labelsf" for="teachername">Teacher's Name:</label>
-                  <div class = "datalist">
-                    <input list = "teacher" name="teachername" placeholder="Search for Your Teacher!" required>
-                    <datalist id="teacher">
-                        <!-- JavaScript inserts teachers here -->
-                    </datalist>
-                  </div>                 
-                  <br>
-                </th>
-                <th>
-                  <label class="labelsf" for="teacherComments">Tell me about your Teacher. What dorm are they in? <br> Did they use reserve? What is their teaching style?<br></label>             
-                  <textarea rows="3" cols="50" id = "comments" name = "teacherComments" required></textarea>
-                </th>
-              </table>
-              <br>
-              <!-- Creating table 4 (Course Comment/Review) -->
-              <table>
-                <th>
-                  <br>
-                  <label class="labelsf" for="courseComments">Comments and Review (How did you enjoy the course? Would you recomend it to others?)</label>
-                  <br><textarea rows="10" cols="80" id = "comments" name ="courseComments" required></textarea></br>
-                  <br>
-                </th>
-                <th>
-                  <input type="submit" href="index.html" class="button" value="Submit">
-                </th>
-              </table>
-              </table>
-            <!-- Submit Button -->
-            </form>
-        </div>
-<script src = "addnewpostdata.js"></script>
-    </body>
+                  </th>
+
+                  <!-- For star ratings -->
+                  <th>
+                    <label class="labelsf" for="rating">Course Rating:</label>
+                    <!-- Adding stars -->
+                    <div class="rating">
+                      <input type="radio" id="star5" name="rating" value="5" required><label for="star5"></label>
+                      <input type="radio" id="star4" name="rating" value="4" required ><label for="star4"></label>
+                      <input type="radio" id="star3" name="rating" value="3" checked="checked" required ><label for="star3"></label>
+                      <input type="radio" id="star2" name="rating" value="2" required ><label for="star2"></label>
+                      <input type="radio" id="star1" name="rating" value="1" required ><label for="star1"></label>
+                  </div> 
+                  </th>
+                </table>
+                <br>
+
+                <!-- Creating table 3 (Teacher related information/inputs) -->
+                <table>
+                  <!-- Creates datalist importing all teacher information -->
+                  <th>
+                    <br>
+                    <label class="labelsf" for="teachername">Teacher's Name:</label>
+                    <div class = "datalist">
+                      <input list = "teacher" name="teachername" placeholder="Search for Your Teacher!" required>
+                      <datalist id="teacher">
+                      </datalist>
+                    </div>                 
+                    <br>
+                  </th>
+                  <!-- For individual teacher comments -->
+                  <th>
+                    <label class="labelsf" for="teacherComments">Tell me about your Teacher. What dorm are they in? <br> Did they use reserve? What is their teaching style?<br></label>             
+                    <textarea rows="3" cols="50" id = "comments" name = "teacherComments" required></textarea>
+                  </th>
+                </table>
+                <br>
+
+                <!-- Creating table 4 (Course Comment/Review) -->
+                <table>
+                  <!-- General info about how they enjoyed the course -->
+                  <th>
+                    <br>
+                    <label class="labelsf" for="courseComments">Comments and Review (How did you enjoy the course? Would you recomend it to others?)</label>
+                    <br>
+                    <textarea rows="10" cols="80" id = "comments" name ="courseComments" required></textarea></br>
+                    <br>
+                  </th>
+                  <!-- Submit Button -->
+                  <th>
+                    <input type="submit" href="index.html" class="button" value="Submit">
+                  </th>
+                </table>
+              </table>             
+              </form>
+          </div>
+      <script src = "addnewpostdata.js"></script>
+  </body>
 </html>
