@@ -13,9 +13,9 @@ async function addcourses()
    
     for (let i in courses) {
         let index = courses[i].indexCourse; //The course index
-        let name = courses[i].name; //The class name
-        let title = courses[i].title; //The class title
-        let description = courses[i].desc; //The class description
+        let name = courses[i].name; //The course name
+        let title = courses[i].title; //The course title
+        let description = courses[i].desc; //The course description
 
          //lastUser, lastDate, and averageRating should come from database
         let lastUser = "lionrampant" + cnt.toString();
@@ -52,35 +52,34 @@ async function addcourses()
         myrating.style.display = "none"; //doesn't take up space and not shown
        
         //This creates the <h3> tag for the last review date/time and last reviewer
-        //We will fill this in AFTER we have created all courses, so for now put in dummy information
         let mylast = document.createElement("h3");
         mylast.setAttribute("id", "courseLastReview" + index);
         mylast.setAttribute("class", "courseLastReviews");
         mylast.innerText = "Last review: " + lastUser +  "(" + lastDate + ")";
 
-        //adding rating to postCard using a string "starString"
+        //Adding rating to postCard using a string "starString"
         let Stars = document.createElement("div");
         let starString = "";
         for (let i = 0; i < rating; i++) {
             starString += "<i class = 'fa fa-star checked' style='font-size:30px'></i>"
         }
-        //for (let i = rating; i<5; i++) {
-        //    starString += "<i class = 'fa fa-star unchecked' style='font-size:30px'></i>"
-        //}
+        
         Stars.innerHTML = starString;
         
+        //Appending traits to the individual "course cards"
         mycard.appendChild(myname);
         mycard.appendChild(mytitle);
         mycard.appendChild(mydesc);
         mycard.appendChild(myrating);
         mycard.appendChild(mylast);
         mycard.appendChild(Stars);
-       
+
+        //Allowing clickability of "course cards" 
         mycard.addEventListener("click", function() { clickedoncourse(index); });
        
+        //Appending the "course cards" to the "allcourses" divtag 
         divTag.appendChild(mycard);
        
        cnt++;
     }
-   // addLatestReviews();
 } //End addcourses
