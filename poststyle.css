@@ -1,4 +1,4 @@
-/* For labels on newPost and Course pages */
+/* For labels on NewPost and Course pages */
 .labelsf {
     color: darkred;
     font-size: 20px;
@@ -7,7 +7,7 @@
     font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
   }
   
-  /* For search bar on home and some input queries on newPost */
+  /* For search bar on index and some input queries on NewPost */
   input[type=text] {
     width: 400pxpx;
     padding: 12px 20px;
@@ -25,7 +25,7 @@
     outline: none;
   }
   
-  /* For certain inputs on the newPost page */
+  /* For certain inputs on the NewPost page */
   .ids input[type=text] {
     width: 300px;
     padding: 12px 20px;
@@ -43,7 +43,7 @@
     outline: none;
   }
   
-  /* To make datalist search bars look good */
+  /* For datalist search bars */
   .datalist input {
     width: 300px;
     padding: 12px 20px;
@@ -57,23 +57,23 @@
     outline: none;
   }
 
-  /* For Star Rating in newPost */
+  /* For star rating in newPost */
   /* https://www.codewithrandom.com/2023/05/04/star-rating-using-html-css/ */
   .rating {
     margin-left: -25px;
     width: 225px;
   }
   
-  /* Placing Stars */
+  /* Placing stars */
   .rating label {
-    /* Stars select left to right */
+    /* stars select left to right */
     float: right;
     width: 40px;
     height: 40px;
     cursor: pointer;
   }
   
-  /* Spacing Stars */
+  /* Spacing stars */
   .rating label:not(:first-of-type) {
     padding-right: 0px;
   }
