@@ -1,0 +1,35 @@
+const express = require('express');
+const mongoose = require('mongoose');
+const app = express();
+const ejs = require('ejs');
+
+app.set('view engine', 'ejs');
+mongoose.connect('mongodb+srv://cSc590:ehHsu3NViHPgLvWX@cluster0.ueyan8p.mongodb.net/TEST1');
+
+const courseSchema = {
+  username: String,
+  course_no: String,
+  term: String,
+  rating: String,
+  teacher: String,
+  teachercomments: String,
+  coursecomments: String,
+};
+
+const course = mongoose.model('ratings_reviews', courseSchema);
+let averageRating;
+app.get('/', async (req, res) => {
+  try {
+    const courses = await course.find({});
+    res.render('course', {
+      courseList: courses,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Internal Server Error');
+  }
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
