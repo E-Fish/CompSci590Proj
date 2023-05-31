@@ -1,0 +1,166 @@
+/* For Post Card and Course Card */
+h1{
+    color: darkred;
+    font-size: 70px;
+    text-align:center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* This is for the RATEPea page header*/
+  h6 {
+    color: darkred;
+    font-size: 70px;
+    text-size-adjust: 30x;
+    text-align:center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For Course and newPost course headers */
+  h2 {
+    color: darkred;
+    font-size: 70px;
+    text-align:left;
+    margin-top: 40px;
+    margin-left: 70px;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For search bar on Homepage */
+  h3 {
+    color: darkred;
+    font-size: 20px;
+    text-align:center;
+    margin: 10px 0;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  h3 a {
+    color: darkred;
+    font-size: 20px;
+    text-align:center;
+    margin: 10px 0;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For rating, subject, and description in Course page */
+  h4 {
+    color: darkred;
+    font-size: 40px;
+    text-align:left;
+    margin-top: -40px;
+    margin-left: 100px;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For elements of Course Table */
+  h5 {
+    color: darkred;
+    font-size: 25px;
+    text-align:center;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For Course Name in Course Card */
+  p{
+    color: darkred;
+    font-size: 20px;
+    text-align:center;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For User in Post Card */
+  .user{
+    color: darkred;
+    font-size: 30px;
+    text-align:left;
+    font-weight: 700;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For Term and Teacher in Post Card */
+  .termandteacher{
+    color: darkred;
+    font-size: 25px;
+    text-align:left;
+    font-weight: 600;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  .body{
+    color: darkred;
+    font-size: 20px;
+    text-align:left;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  /* For Review in Post Card */
+  .review{
+    color: darkred;
+    font-size: 20px;
+    text-align:left;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  .date{
+    color: darkred;
+    font-size: 15px;
+    text-align:left;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  .postCard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 2px solid darkred; 
+    padding: 15px 20px;  /* spacing inside card around text */
+    border-radius: 25px; /* rounded borders */
+    color: darkred;
+    text-align: center;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  #allreviews {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 50px;
+  }
+    
+  /* For any FA star */
+  .checked {
+    color:orange;
+  }
+  
+  .unchecked {
+    color: lightgrey;
+  }
+  
+  #courseNameTitle{
+    color: darkred;
+    font-size: 70px;
+    font-weight: bold;
+    text-align:left;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
+  #courseRating{
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  #courseDescription{
+    color: darkred;
+    font-size: 25px;
+    text-align:left;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Optima, Geneva, Tahoma, sans-serif, Times, serif;
+  }
+  
